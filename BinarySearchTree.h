@@ -1,0 +1,14 @@
+//
+// Created by mqjyl on 2020/7/2.
+//
+
+#ifndef ALGORITHM_PATTERN_BINARYSEARCHTREE_H
+#define ALGORITHM_PATTERN_BINARYSEARCHTREE_H
+
+
+class BinarySearchTree {
+
+};
+
+
+#endif //ALGORITHM_PATTERN_BINARYSEARCHTREE_H

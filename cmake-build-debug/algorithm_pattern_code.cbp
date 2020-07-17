@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="algorithm_pattern_code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="algorithm_pattern_code">
+				<Option output="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/algorithm_pattern_code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 algorithm_pattern_code"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="algorithm_pattern_code/fast">
+				<Option output="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/algorithm_pattern_code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 algorithm_pattern_code/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BinarySearchTree.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BinarySearchTree.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BinaryTree.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BinaryTree.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BitOperations.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BitOperations.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/DivideConquer.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/DivideConquer.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/DynamicProgramming.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/DynamicProgramming.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/HashTable.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/HashTable.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/ListHandler.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/ListHandler.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/Nodes.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/Recursive.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/Recursive.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SortTool.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SortTool.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/main.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
