@@ -454,3 +454,37 @@ ListNode* ListHandler::removeNthFromEnd(ListNode* head, int n){
     post->next = post->next->next;
     return dummy->next;
 }
+
+// 25. K 个一组翻转链表
+ListNode* ListHandler::reverseKGroup(ListNode* head, int k) {
+    ListNode *dummy = new ListNode(0);
+    dummy->next = head;
+    ListNode *p = dummy;
+    ListNode *q = dummy;
+    while(p){
+        int t = k;
+        while(p && t > 0){
+            p = p->next;
+            --t;
+        }
+        if(t == 0){
+            // 反转
+            ListNode *temp = p ? p->next : p;
+            ListNode *tmpHead = q->next->next;
+            ListNode *newHead = q->next;
+            p = newHead;
+            while(tmpHead != temp){
+                ListNode *ptr = tmpHead;
+                tmpHead = tmpHead->next;
+                ptr->next = newHead;
+                newHead = ptr;
+            }
+            q->next = newHead;
+            p->next = temp;
+            q = p;
+        }else{
+            break;
+        }
+    }
+    return dummy->next;
+}

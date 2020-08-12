@@ -49,6 +49,9 @@ public:
 
     // 删除链表的倒数第N个节点
     ListNode* removeNthFromEnd(ListNode* head, int n);
+
+    // 25. K 个一组翻转链表
+    ListNode* reverseKGroup(ListNode* head, int k);
 };
 
 

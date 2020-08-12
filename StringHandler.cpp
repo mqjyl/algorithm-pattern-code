@@ -3,6 +3,7 @@
 //
 
 #include "StringHandler.h"
+using namespace std;
 
 // 实现 strStr()
 int StringHandler::strStr(std::string haystack, std::string needle){
@@ -21,7 +22,25 @@ int StringHandler::strStr(std::string haystack, std::string needle){
 }
 // 替换空格
 std::string StringHandler::replaceSpace(std::string s, const std::string p){
-
+    int count = 0;
+    for(auto c : s){
+        if(c == ' ')
+            ++count;
+    }
+    int len = count * p.size() + s.size() - count;
+    string result(len, ' ');
+    int i = 0;
+    for(auto c : s){
+        if(c != ' '){
+            result[i++] = c;
+        }
+        else{
+            for(auto d : p){
+                result[i++] = d;
+            }
+        }
+    }
+    return result;
 }
 
 void getNext(std::string needle, std::vector<int> &next){
