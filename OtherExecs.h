@@ -8,8 +8,7 @@
 
 class OtherExecs {
 public:
-    // 130. 被围绕的区域
-    void solve(std::vector<std::vector<char>>& board);
+
 };
 
 

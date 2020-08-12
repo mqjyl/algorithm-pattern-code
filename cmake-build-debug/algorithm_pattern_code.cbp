@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BFS_DFS.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BFS_DFS.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BackTracking.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
@@ -114,6 +120,12 @@
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/DynamicProgramming.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/GraphHandler.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/GraphHandler.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/HashTable.cpp">

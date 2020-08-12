@@ -123,6 +123,33 @@ algorithm_pattern_code/fast:
 	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/build
 .PHONY : algorithm_pattern_code/fast
 
+BFS_DFS.o: BFS_DFS.cpp.o
+
+.PHONY : BFS_DFS.o
+
+# target to build an object file
+BFS_DFS.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/BFS_DFS.cpp.o
+.PHONY : BFS_DFS.cpp.o
+
+BFS_DFS.i: BFS_DFS.cpp.i
+
+.PHONY : BFS_DFS.i
+
+# target to preprocess a source file
+BFS_DFS.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/BFS_DFS.cpp.i
+.PHONY : BFS_DFS.cpp.i
+
+BFS_DFS.s: BFS_DFS.cpp.s
+
+.PHONY : BFS_DFS.s
+
+# target to generate assembly for a file
+BFS_DFS.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/BFS_DFS.cpp.s
+.PHONY : BFS_DFS.cpp.s
+
 BackTracking.o: BackTracking.cpp.o
 
 .PHONY : BackTracking.o
@@ -284,6 +311,33 @@ DynamicProgramming.s: DynamicProgramming.cpp.s
 DynamicProgramming.cpp.s:
 	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/DynamicProgramming.cpp.s
 .PHONY : DynamicProgramming.cpp.s
+
+GraphHandler.o: GraphHandler.cpp.o
+
+.PHONY : GraphHandler.o
+
+# target to build an object file
+GraphHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/GraphHandler.cpp.o
+.PHONY : GraphHandler.cpp.o
+
+GraphHandler.i: GraphHandler.cpp.i
+
+.PHONY : GraphHandler.i
+
+# target to preprocess a source file
+GraphHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/GraphHandler.cpp.i
+.PHONY : GraphHandler.cpp.i
+
+GraphHandler.s: GraphHandler.cpp.s
+
+.PHONY : GraphHandler.s
+
+# target to generate assembly for a file
+GraphHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/GraphHandler.cpp.s
+.PHONY : GraphHandler.cpp.s
 
 HashTable.o: HashTable.cpp.o
 
@@ -510,6 +564,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... algorithm_pattern_code"
 	@echo "... edit_cache"
+	@echo "... BFS_DFS.o"
+	@echo "... BFS_DFS.i"
+	@echo "... BFS_DFS.s"
 	@echo "... BackTracking.o"
 	@echo "... BackTracking.i"
 	@echo "... BackTracking.s"
@@ -528,6 +585,9 @@ help:
 	@echo "... DynamicProgramming.o"
 	@echo "... DynamicProgramming.i"
 	@echo "... DynamicProgramming.s"
+	@echo "... GraphHandler.o"
+	@echo "... GraphHandler.i"
+	@echo "... GraphHandler.s"
 	@echo "... HashTable.o"
 	@echo "... HashTable.i"
 	@echo "... HashTable.s"

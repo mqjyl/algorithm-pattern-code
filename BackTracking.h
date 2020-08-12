@@ -13,6 +13,8 @@ public:
     std::vector<std::vector<int>> permute(std::vector<int>& nums);
     // N皇后
     std::vector<std::vector<std::string>> solveNQueens(int n);
+    // 37. 解数独
+    void solveSudoku(std::vector<std::vector<char>>& board);
 };
 
 

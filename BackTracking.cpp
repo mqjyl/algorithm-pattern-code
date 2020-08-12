@@ -26,15 +26,48 @@ std::vector<std::vector<int>> BackTracking::permute(std::vector<int>& nums){
     return result;
 }
 
-void backtrack_n(std::vector<std::vector<std::string>> &result, std::vector<std::string> &solution, int n){
-    if(n == 0){
-        result.push_back(solution);
+bool isValid(std::vector<int> &solution, int col){
+    int len = solution.size();
+    for(int i = 0; i < len; ++i){
+        if(std::abs(len - i) == std::abs(col - solution[i]))
+            return false;
+    }
+    return true;
+}
+
+void backtrack_n(std::vector<std::vector<std::string>> &result, std::vector<int> &solution, std::vector<std::string> &cases, int n){
+    if(n == solution.size()){
+        std::vector<std::string> temp;
+        for(int i : solution){
+            temp.push_back(cases[i]);
+        }
+        result.push_back(temp);
         return;
+    }
+    for(int i = 0; i < n; ++i){
+        if(std::find(solution.begin(), solution.end(), i) != solution.end())
+            continue;
+        if(isValid(solution, i)){
+            solution.push_back(i);
+            backtrack_n(result, solution, cases, n);
+            solution.pop_back();
+        }
     }
 }
 // N皇后
 std::vector<std::vector<std::string>> BackTracking::solveNQueens(int n){
+    std::vector<std::string> cases;
+    for(int i = 0; i < n; ++i){
+        std::string str = std::string(i, '.') + 'Q' + std::string(n - i - 1, '.');
+        cases.push_back(str);
+    }
     std::vector<std::vector<std::string>> result;
-
+    std::vector<int> track;
+    backtrack_n(result, track, cases, n);
     return result;
+}
+
+// 37. 解数独
+void BackTracking::solveSudoku(std::vector<std::vector<char>>& board){
+
 }
