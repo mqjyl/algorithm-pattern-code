@@ -2,6 +2,9 @@
 // Created by mqjyl on 2020/6/29.
 //
 #include <iostream>
+#include <stack>
+#include <set>
+#include <map>
 #include "ListHandler.h"
 
 ListNode* ListHandler::createList(int *pArray, int pCount){
@@ -189,6 +192,7 @@ ListNode* ListHandler::mergeTwoLists(ListNode* l1, ListNode* l2){
 // 给定一个链表和一个特定值 x，对链表进行分隔，使得所有小于 x 的节点都在大于或等于 x 的节点之前。
 // 应当保留两个分区中每个节点的初始相对位置。
 ListNode* ListHandler::partition(ListNode* head, int x){
+    std::cout << "come in partition" << std::endl;
     if(!(head && head->next)){
         return head;
     }
@@ -221,9 +225,232 @@ ListNode* ListHandler::partition(ListNode* head, int x){
 
 // 排序链表
 ListNode* ListHandler::sortList(ListNode* head){
-
+    if(!head || !head->next)
+        return head;
+    // 拆分
+    ListNode *quickptr=head->next, *slowptr=head;
+    // 若quickptr=head，当原始链表长度为2时，会进入无线递归。
+    while(quickptr && quickptr->next){
+        quickptr = quickptr->next->next;
+        slowptr = slowptr->next;
+    }
+    ListNode *tmpHead = slowptr->next;
+    slowptr->next = NULL;
+    ListNode *head1 = sortList(head);
+    ListNode *head2 = sortList(tmpHead);
+    // 合并
+    return this->mergeTwoLists(head1, head2);
 }
 // 重排链表
+/*
 void ListHandler::reorderList(ListNode* head){
+    if(!head || !head->next)
+        return;
+    ListNode *quickptr=head->next, *slowptr=head;
+    std::stack<ListNode *> istack;
+    while(quickptr && quickptr->next){
+        quickptr = quickptr->next->next;
+        istack.push(slowptr);
+        slowptr = slowptr->next;
+    }
+    ListNode *tmpHead = slowptr->next;
+    ListNode *tmpPtr = slowptr;
+    ListNode *newHead = tmpPtr;
+    if(!quickptr){ // 奇数个
+        tmpPtr->next = NULL;
+    }else{
+        tmpHead = tmpHead->next;
+        tmpPtr->next->next = NULL;
+    }
+    while(!istack.empty()){
+        tmpPtr = istack.top();
+        istack.pop();
+        ListNode *tmp = tmpHead->next;
+        tmpHead->next = newHead;
+        tmpPtr->next = tmpHead;
+        tmpHead = tmp;
+        newHead = tmpPtr;
+    }
+    head = newHead;
+}
+ */
+void ListHandler::reorderList(ListNode* head){
+    if(!head || !head->next)
+        return;
+    ListNode *quickptr=head->next, *slowptr=head;
+    while(quickptr && quickptr->next){
+        quickptr = quickptr->next->next;
+        slowptr = slowptr->next;
+    }
+    ListNode *rightHead = slowptr->next;
+    slowptr->next = NULL;
+    rightHead = this->reverseList(rightHead);
+    // 合并
+    ListNode *leftHead = head;
+    ListNode *tmpPtr = leftHead;
+    while(leftHead){
+        tmpPtr = leftHead;
+        leftHead = leftHead->next;
+        tmpPtr->next = rightHead;
+        if(rightHead){
+            rightHead = rightHead->next;
+            tmpPtr->next->next = leftHead;
+        } // 奇数个的情况
+    }
+}
+// 判断链表是否有环
+/*
+bool ListHandler::hasCycle(ListNode *head){
+    if(!head || !head->next)
+        return false;
+    ListNode *quickptr=head->next, *slowptr=head;
+    while(quickptr && quickptr->next){
+        if(quickptr == slowptr){
+            return true;
+        }
+        quickptr = quickptr->next->next;
+        slowptr = slowptr->next;
+    }
+    return false;
+}
+*/
+bool ListHandler::hasCycle(ListNode *head){
+    if(!head || !head->next)
+        return false;
+    std::set<ListNode *> iset;
+    ListNode *ptr = head;
+    while(ptr){
+        if(iset.count(ptr) > 0){
+            return true;
+        }
+        iset.insert(ptr);
+        ptr = ptr->next;
+    }
+    return false;
+}
+// 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
+ListNode *ListHandler::detectCycle(ListNode *head){
+    if(!head || !head->next)
+        return NULL;
+    ListNode *quickptr=head->next, *slowptr=head;
+    while(quickptr && quickptr->next){
+        if(quickptr == slowptr){
+            quickptr = head;
+            slowptr = slowptr->next;
+            break;
+        }
+        quickptr = quickptr->next->next;
+        slowptr = slowptr->next;
+    }
+    if(quickptr == head){
+        while(quickptr != slowptr){
+            quickptr = quickptr->next;
+            slowptr = slowptr->next;
+        }
+        return quickptr;
+    }
+    return NULL;
+}
+// 判断一个链表是否为回文链表。
+bool ListHandler::isPalindrome(ListNode* head){
+    if(!head || !head->next)
+        return true;
+    ListNode *quickptr=head->next, *slowptr=head;
+    while(quickptr && quickptr->next){
+        quickptr = quickptr->next->next;
+        slowptr = slowptr->next;
+    }
+    ListNode *rightHead = slowptr->next;
+    slowptr->next = NULL;
+    rightHead = this->reverseList(rightHead);
+    // 合并
+    ListNode *leftHead = head;
+    while(leftHead && rightHead){
+        if(leftHead->val != rightHead->val){
+            return false;
+        }
+        leftHead = leftHead->next;
+        rightHead = rightHead->next;
+    }
+    return true;
+}
+// 给定一个链表，每个节点包含一个额外增加的随机指针，该指针可以指向链表中的任何节点或空节点。
+// 要求返回这个链表的 深拷贝。
+/*
+Node* ListHandler::copyRandomList(Node* head){
+    if(!head)
+        return NULL;
+    std::map<Node*, Node*> imap;
+    Node *ptr = head;
+    Node *newHead = new Node(0);
+    Node *newptr = newHead;
+    while(ptr){
+        newptr->next = new Node(ptr->val);
+        newptr = newptr->next;
+        imap.insert(std::make_pair(ptr, newptr));
+        ptr = ptr->next;
+    }
+    ptr = head;
+    newptr = newHead->next;
+    while(ptr){
+        if(ptr->random)
+            newptr->random = imap.find(ptr->random)->second;
+        ptr = ptr->next;
+        newptr = newptr->next;
+    }
+    return newHead->next;
+}
+ */
+Node* ListHandler::copyRandomList(Node* head){
+    if(!head)
+        return NULL;
+    Node *ptr = head;
+    Node *tmpptr = head;
+    while(ptr){
+        tmpptr = ptr->next;
+        ptr->next = new Node(ptr->val);
+        ptr->next->next = tmpptr;
+        ptr = tmpptr;
+    }
+    ptr = head;
+    tmpptr = head->next;
+    while(tmpptr){
+        if(ptr->random)
+            tmpptr->random = ptr->random->next;
+        if(tmpptr->next){
+            tmpptr = tmpptr->next->next;
+            ptr = ptr->next->next;
+        }else{
+            break;
+        }
+    }
+    // 拆分
+    Node *newHead = head->next;
+    ptr = head;
+    tmpptr = head->next;
+    while(tmpptr && tmpptr->next){
+        ptr->next = tmpptr->next;
+        tmpptr->next = tmpptr->next->next;
+        ptr = ptr->next;
+        tmpptr = tmpptr->next;
+    }
+    ptr->next = NULL;
+    return newHead;
+}
 
+// 删除链表的倒数第N个节点
+ListNode* ListHandler::removeNthFromEnd(ListNode* head, int n){
+    ListNode *dummy = new ListNode(0);
+    dummy->next = head;
+    ListNode *prev = dummy, *post = dummy;
+    while(n >= 0){
+        prev = prev->next;
+        n--;
+    }
+    while(prev){
+        prev = prev->next;
+        post = post->next;
+    }
+    post->next = post->next->next;
+    return dummy->next;
 }

@@ -22,4 +22,18 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  };
 
+// Definition for a list node with a random pointer.
+class Node {
+public:
+    int val;
+    Node* next;
+    Node* random;
+
+    Node(int _val) {
+     val = _val;
+     next = NULL;
+     random = NULL;
+    }
+};
+
 #endif //ALGORITHM_PATTERN_NODES_H

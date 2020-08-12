@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BackTracking.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BackTracking.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BinarySearchTree.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
@@ -125,16 +131,34 @@
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/Nodes.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/OtherExecs.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/OtherExecs.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/Recursive.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/Recursive.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SlidingWindow.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SlidingWindow.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SortTool.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SortTool.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/StringHandler.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/StringHandler.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/main.cpp">

@@ -109,18 +109,32 @@ bool DynamicProgramming::canJump(std::vector<int>& nums){
     return curr_end == -1 ? false : true;
 }
 
+//int DynamicProgramming::jump(std::vector<int>& nums){
+//    int len = nums.size();
+//    std::vector<int> dp(len, len);
+//    dp[0] = 0;
+//    for(int i = 0;i < len;i++){
+//        for(int j = 1;j <= nums[i] && i + j < len;j++){
+//            dp[i + j] = std::min(dp[i + j], dp[i] + 1);
+//        }
+//    }
+//    return dp[len - 1];
+//}
+
 int DynamicProgramming::jump(std::vector<int>& nums){
-    int len = nums.size();
-    std::vector<int> dp(len);
-    for(int i = 0;i < len;i++){
-        dp[i] = i + 1;
-    }
-    dp[0] = 0;
-    for(int i = 0;i < len;i++){
-        for(int j = 1;j <= nums[i] && i + j < len;j++){
-            dp[i + j] = std::min(dp[i + j], dp[i] + 1);
+    int len = nums.size() - 1;
+    std::vector<int> dp(len, len);
+    dp[len] = 0;
+    for(int i = len; i >= 0; --i){
+        if(nums[i] >= (len - i))
+            dp[i] = 1;
+        else{
+            int tMin = len;
+            for(int j = i + 1; j <= nums[i] + i; j++){
+                tMin = std::min(tMin, dp[j]);
+            }
+            dp[i] = tMin;
         }
     }
-    return dp[len - 1];
+    return dp[0];
 }
-

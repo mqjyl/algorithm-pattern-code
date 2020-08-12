@@ -35,6 +35,20 @@ public:
     ListNode* sortList(ListNode* head);
     // 重排链表
     void reorderList(ListNode* head);
+    // 判断链表是否有环
+    bool hasCycle(ListNode *head);
+    // 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
+    ListNode *detectCycle(ListNode *head);
+
+    // 判断一个链表是否为回文链表。
+    bool isPalindrome(ListNode* head);
+
+    // 给定一个链表，每个节点包含一个额外增加的随机指针，该指针可以指向链表中的任何节点或空节点。
+    // 要求返回这个链表的 深拷贝。
+    Node* copyRandomList(Node* head);
+
+    // 删除链表的倒数第N个节点
+    ListNode* removeNthFromEnd(ListNode* head, int n);
 };
 
 

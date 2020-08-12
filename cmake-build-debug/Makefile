@@ -123,6 +123,33 @@ algorithm_pattern_code/fast:
 	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/build
 .PHONY : algorithm_pattern_code/fast
 
+BackTracking.o: BackTracking.cpp.o
+
+.PHONY : BackTracking.o
+
+# target to build an object file
+BackTracking.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.o
+.PHONY : BackTracking.cpp.o
+
+BackTracking.i: BackTracking.cpp.i
+
+.PHONY : BackTracking.i
+
+# target to preprocess a source file
+BackTracking.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.i
+.PHONY : BackTracking.cpp.i
+
+BackTracking.s: BackTracking.cpp.s
+
+.PHONY : BackTracking.s
+
+# target to generate assembly for a file
+BackTracking.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.s
+.PHONY : BackTracking.cpp.s
+
 BinarySearchTree.o: BinarySearchTree.cpp.o
 
 .PHONY : BinarySearchTree.o
@@ -312,6 +339,33 @@ ListHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/ListHandler.cpp.s
 .PHONY : ListHandler.cpp.s
 
+OtherExecs.o: OtherExecs.cpp.o
+
+.PHONY : OtherExecs.o
+
+# target to build an object file
+OtherExecs.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.o
+.PHONY : OtherExecs.cpp.o
+
+OtherExecs.i: OtherExecs.cpp.i
+
+.PHONY : OtherExecs.i
+
+# target to preprocess a source file
+OtherExecs.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.i
+.PHONY : OtherExecs.cpp.i
+
+OtherExecs.s: OtherExecs.cpp.s
+
+.PHONY : OtherExecs.s
+
+# target to generate assembly for a file
+OtherExecs.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.s
+.PHONY : OtherExecs.cpp.s
+
 Recursive.o: Recursive.cpp.o
 
 .PHONY : Recursive.o
@@ -339,6 +393,33 @@ Recursive.cpp.s:
 	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/Recursive.cpp.s
 .PHONY : Recursive.cpp.s
 
+SlidingWindow.o: SlidingWindow.cpp.o
+
+.PHONY : SlidingWindow.o
+
+# target to build an object file
+SlidingWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.o
+.PHONY : SlidingWindow.cpp.o
+
+SlidingWindow.i: SlidingWindow.cpp.i
+
+.PHONY : SlidingWindow.i
+
+# target to preprocess a source file
+SlidingWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.i
+.PHONY : SlidingWindow.cpp.i
+
+SlidingWindow.s: SlidingWindow.cpp.s
+
+.PHONY : SlidingWindow.s
+
+# target to generate assembly for a file
+SlidingWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.s
+.PHONY : SlidingWindow.cpp.s
+
 SortTool.o: SortTool.cpp.o
 
 .PHONY : SortTool.o
@@ -365,6 +446,33 @@ SortTool.s: SortTool.cpp.s
 SortTool.cpp.s:
 	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/SortTool.cpp.s
 .PHONY : SortTool.cpp.s
+
+StringHandler.o: StringHandler.cpp.o
+
+.PHONY : StringHandler.o
+
+# target to build an object file
+StringHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.o
+.PHONY : StringHandler.cpp.o
+
+StringHandler.i: StringHandler.cpp.i
+
+.PHONY : StringHandler.i
+
+# target to preprocess a source file
+StringHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.i
+.PHONY : StringHandler.cpp.i
+
+StringHandler.s: StringHandler.cpp.s
+
+.PHONY : StringHandler.s
+
+# target to generate assembly for a file
+StringHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm_pattern_code.dir/build.make CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.s
+.PHONY : StringHandler.cpp.s
 
 main.o: main.cpp.o
 
@@ -402,6 +510,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... algorithm_pattern_code"
 	@echo "... edit_cache"
+	@echo "... BackTracking.o"
+	@echo "... BackTracking.i"
+	@echo "... BackTracking.s"
 	@echo "... BinarySearchTree.o"
 	@echo "... BinarySearchTree.i"
 	@echo "... BinarySearchTree.s"
@@ -423,12 +534,21 @@ help:
 	@echo "... ListHandler.o"
 	@echo "... ListHandler.i"
 	@echo "... ListHandler.s"
+	@echo "... OtherExecs.o"
+	@echo "... OtherExecs.i"
+	@echo "... OtherExecs.s"
 	@echo "... Recursive.o"
 	@echo "... Recursive.i"
 	@echo "... Recursive.s"
+	@echo "... SlidingWindow.o"
+	@echo "... SlidingWindow.i"
+	@echo "... SlidingWindow.s"
 	@echo "... SortTool.o"
 	@echo "... SortTool.i"
 	@echo "... SortTool.s"
+	@echo "... StringHandler.o"
+	@echo "... StringHandler.i"
+	@echo "... StringHandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

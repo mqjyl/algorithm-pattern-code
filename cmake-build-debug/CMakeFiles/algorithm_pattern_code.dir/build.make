@@ -187,6 +187,58 @@ CMakeFiles/algorithm_pattern_code.dir/HashTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/HashTable.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/HashTable.cpp -o CMakeFiles/algorithm_pattern_code.dir/HashTable.cpp.s
 
+CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.o: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.o: ../StringHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.o -c /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/StringHandler.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/StringHandler.cpp > CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/StringHandler.cpp -o CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.o: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.o: ../SlidingWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.o -c /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SlidingWindow.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SlidingWindow.cpp > CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/SlidingWindow.cpp -o CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.o: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.o: ../BackTracking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.o -c /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BackTracking.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BackTracking.cpp > CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/BackTracking.cpp -o CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.o: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.o: ../OtherExecs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.o -c /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/OtherExecs.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/OtherExecs.cpp > CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/OtherExecs.cpp -o CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.s
+
 # Object files for target algorithm_pattern_code
 algorithm_pattern_code_OBJECTS = \
 "CMakeFiles/algorithm_pattern_code.dir/main.cpp.o" \
@@ -198,7 +250,11 @@ algorithm_pattern_code_OBJECTS = \
 "CMakeFiles/algorithm_pattern_code.dir/DivideConquer.cpp.o" \
 "CMakeFiles/algorithm_pattern_code.dir/DynamicProgramming.cpp.o" \
 "CMakeFiles/algorithm_pattern_code.dir/BitOperations.cpp.o" \
-"CMakeFiles/algorithm_pattern_code.dir/HashTable.cpp.o"
+"CMakeFiles/algorithm_pattern_code.dir/HashTable.cpp.o" \
+"CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.o" \
+"CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.o" \
+"CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.o" \
+"CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.o"
 
 # External object files for target algorithm_pattern_code
 algorithm_pattern_code_EXTERNAL_OBJECTS =
@@ -213,9 +269,13 @@ algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/DivideConquer.
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/DynamicProgramming.cpp.o
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/BitOperations.cpp.o
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/HashTable.cpp.o
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/StringHandler.cpp.o
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/SlidingWindow.cpp.o
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/BackTracking.cpp.o
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/OtherExecs.cpp.o
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/build.make
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable algorithm_pattern_code.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/workspaces/cpp_workspace/algorithm-pattern-code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable algorithm_pattern_code.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/algorithm_pattern_code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
