@@ -103,3 +103,26 @@ std::vector<int> SortTool::mergeSort(std::vector<int>& nums){
     merge_sort(nums, 0, nums.size() - 1);
     return nums;
 }
+
+// 选择排序
+std::vector<int> SortTool::selectionSort(std::vector<int>& nums){
+    int len = nums.size();
+    for(int i = 0;i < len; i++){
+        int tmp = nums[i];
+        int k = i;
+        for(int j = i + 1; j < len; ++j){
+            if(tmp > nums[j]){
+                tmp = nums[j];
+                k = j;
+            }
+        }
+        nums[k] = nums[i];
+        nums[i] = tmp;
+    }
+    return nums;
+}
+
+// 堆排序
+std::vector<int> SortTool::heapSort(std::vector<int>& nums){
+
+}

@@ -5,6 +5,7 @@
 #include "SortTool.h"
 #include "SlidingWindow.h"
 #include "HashTable.h"
+#include "GraphHandler.h"
 
 void printList(ListNode *head){
     std::cout << '[';
@@ -90,7 +91,7 @@ void testSort(){
     std::vector<int> gPreorder = {3,9,20,15,7,10,3,44,8,34,35,445,2,45,6,5,4,43,87,98,7,6,677,655,3456,543,4,7,55,444,34,9,2,0,2,11,42};
     SortTool *sortTool = new SortTool();
     //std::vector<int> gResult = sortTool->insertionSort(gPreorder);
-    std::vector<int> gResult = sortTool->mergeSort(gPreorder);
+    std::vector<int> gResult = sortTool->selectionSort(gPreorder);
     for(int i = 0;i < gResult.size();i ++){
         std::cout<< gResult[i] << " ";
     }
@@ -114,13 +115,18 @@ void testSlidingWindow(){
     std::cout << slidingWindow->longestOnes(nums1, 0) << std::endl;
 }
 
-
+void testGraph(){
+    //testDijkstra();
+    //testPrim();
+    testKruscal();
+}
 
 int main() {
-    testList();
+    //testList();
     //testTree();
-    //testSort();
+    testSort();
     //testSlidingWindow();
     //testHash();
+    //testGraph();
     return 0;
 }

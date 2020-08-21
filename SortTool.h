@@ -19,6 +19,10 @@ public:
     std::vector<int> shellSort(std::vector<int>& nums);
     // 归并排序
     std::vector<int> mergeSort(std::vector<int>& nums);
+    // 选择排序
+    std::vector<int> selectionSort(std::vector<int>& nums);
+    // 堆排序
+    std::vector<int> heapSort(std::vector<int>& nums);
 };
 
 

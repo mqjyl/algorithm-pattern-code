@@ -471,3 +471,14 @@ bool BinaryTree::isBalanced(TreeNode* root){
     int height = 0;
     return isBalancedTree(root, height);
 }
+
+bool isValidBST(TreeNode* root){
+    if(!root)
+        return true;
+    bool bleft = true, bright = true;
+    if(root->left)
+        bleft = ((root->left->val <= root->val ? true : false) && isValidBST(root->left));
+    if(root->right)
+        bright = ((root->right->val >= root->val ? true : false) && isValidBST(root->right));
+    return (bleft && bright);
+}
