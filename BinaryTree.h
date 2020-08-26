@@ -41,6 +41,15 @@ public:
 
     // 给定一个二叉树，判断它是否是高度平衡的二叉树。
     bool isBalanced(TreeNode* root);
+
+    // 124. 二叉树中的最大路径和
+    int maxPathSum(TreeNode* root);
+
+    // 112. 路径总和
+    bool hasPathSum(TreeNode* root, int sum);
+
+    // 113. 路径总和 II
+    std::vector<std::vector<int>> pathSum(TreeNode* root, int sum);
 };
 
 

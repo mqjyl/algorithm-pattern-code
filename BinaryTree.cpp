@@ -6,7 +6,10 @@
 #include <utility>
 #include <queue>
 #include <algorithm>
+#include <climits>
 #include "BinaryTree.h"
+
+using namespace std;
 
 // 从前序和中序构造二叉树
 TreeNode* BinaryTree::buildTree(std::vector<int>& preorder, std::vector<int>& inorder) {
@@ -453,32 +456,80 @@ int BinaryTree::maxDepthBFS(TreeNode* root){
     return height;
 }
 
-bool isBalancedTree(TreeNode *root, int &subHeight){
-    if(!root){
-        subHeight = 0;
-        return true;
-    }
-    int x,y;
-    bool bLeft = isBalancedTree(root->left, x);
-    bool bRight = isBalancedTree(root->right, y);
-    bool bIt = std::abs(x - y) > 1 ? false : true;
-    subHeight = x > y ? x + 1 : y + 1;
-    return bLeft && bRight && bIt;
-}
-
 // 给定一个二叉树，判断它是否是高度平衡的二叉树。
-bool BinaryTree::isBalanced(TreeNode* root){
-    int height = 0;
-    return isBalancedTree(root, height);
+//bool BinaryTree::isBalanced(TreeNode* root){
+//    if(root && !root->left && !root->right)
+//        return true;
+//    stack<TreeNode *> istack;
+//    TreeNode *ptr = root;
+//    long long last_val = (long long)INT_MIN - 1;
+//    while(ptr || !istack.empty()){
+//        while(ptr) {
+//            istack.push(ptr);
+//            ptr = ptr->left;
+//        }
+//        TreeNode *curr_ptr = istack.top();
+//        if(curr_ptr->val <= last_val)
+//            return false;
+//        last_val = curr_ptr->val;
+//        istack.pop();
+//        ptr = curr_ptr->right;
+//    }
+//    return true;
+//}
+
+bool helper(TreeNode* root, long long lower, long long upper) {
+    if(root == NULL)
+        return true;
+    if(root->val <= lower || root->val >= upper)
+        return false;
+    return helper(root->left, lower, root->val) && helper(root->right, root->val, upper);
 }
 
-bool isValidBST(TreeNode* root){
+bool BinaryTree::isBalanced(TreeNode* root){
+    return helper(root, LONG_MIN, LONG_MAX);
+}
+
+// 124. 二叉树中的最大路径和
+int helper(TreeNode *node, int &sum){
+    if(!node){
+        sum = max(sum, 0);
+        return 0;
+    }
+    int lsum = 0, rsum = 0;
+    if(node->left){
+        lsum = max(0, helper(node->left, sum));  // 左子树的贡献
+    }
+    if(node->right){
+        rsum = max(0, helper(node->right, sum)); // 右子树的贡献
+    }
+    sum = max(sum, node->val + lsum + rsum); // 当前子树的 maxSum 挑战最大值
+    return node->val + max(lsum, rsum);      // 向父节点提供的最大和，要包括自己
+}
+int BinaryTree::maxPathSum(TreeNode* root){
+    int maxSum = INT_MIN;
+    helper(root, maxSum);
+    return maxSum;
+}
+
+// 112. 路径总和
+bool BinaryTree::hasPathSum(TreeNode* root, int sum){
     if(!root)
-        return true;
-    bool bleft = true, bright = true;
-    if(root->left)
-        bleft = ((root->left->val <= root->val ? true : false) && isValidBST(root->left));
-    if(root->right)
-        bright = ((root->right->val >= root->val ? true : false) && isValidBST(root->right));
-    return (bleft && bright);
+        return false;
+    if(root && !root->left && !root->right)
+        return sum == root->val;
+    return hasPathSum(root->left, sum - root->val)
+           || hasPathSum(root->right, sum - root->val);
+}
+
+// 113. 路径总和 II
+void getPaths(TreeNode *root, vector<vector<int>> &result, vector<int> &path){
+
+}
+
+std::vector<std::vector<int>> pathSum(TreeNode* root, int sum){
+    vector<vector<int>> result;
+    vector<int> path;
+
+    return result;
 }
