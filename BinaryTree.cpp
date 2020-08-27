@@ -524,7 +524,7 @@ bool BinaryTree::hasPathSum(TreeNode* root, int sum){
 
 // 113. 路径总和 II
 void getPaths(TreeNode *root, vector<vector<int>> &result, vector<int> &path){
-
+    
 }
 
 std::vector<std::vector<int>> pathSum(TreeNode* root, int sum){
