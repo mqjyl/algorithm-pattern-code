@@ -8,8 +8,13 @@
 #include <queue>
 
 class StackAndQueue {
-
+public:
+    // 用一个栈实现另一个栈的排序
+    void sortStack(std::stack<int>& stk);
 };
+
+// 测试函数接口
+void test_sortStack();
 
 class MyQueue {
 public:
@@ -102,6 +107,33 @@ public:
     }
 private:
     std::queue<int> *m_queue;
+};
+
+class MinStack {
+public:
+    /** initialize your data structure here. */
+    MinStack() {}
+    void push(int x) {
+        m_stack.push(x);
+        if(min_stack.empty() || x <= min_stack.top())
+            min_stack.push(x);
+    }
+    void pop() {
+        if(!m_stack.empty()){
+            if(m_stack.top() == min_stack.top())
+                min_stack.pop();
+            m_stack.pop();
+        }
+    }
+    int top() {
+        return m_stack.top();
+    }
+    int getMin() {
+        return min_stack.top();
+    }
+private:
+    std::stack<int> m_stack;
+    std::stack<int> min_stack;
 };
 
 

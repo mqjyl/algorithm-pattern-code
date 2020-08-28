@@ -46,6 +46,9 @@ public:
      * You can assume that you can always reach the last index.
      */
     int jump(std::vector<int>& nums);
+
+    // 0-1背包问题
+
 };
 
 
