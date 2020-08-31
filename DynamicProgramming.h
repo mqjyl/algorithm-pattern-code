@@ -6,6 +6,8 @@
 #define ALGORITHM_PATTERN_DYNAMICPROGRAMMING_H
 #include <vector>
 
+const int prime = 1e9 + 7;
+
 class DynamicProgramming {
 public:
     // Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
@@ -49,6 +51,23 @@ public:
 
     // 0-1背包问题
 
+
+    // 股票买卖问题
+    // 121. 买卖股票的最佳时机
+    int maxProfit(std::vector<int>& prices);
+    // 122. 买卖股票的最佳时机 II
+    int maxProfit_infinity(std::vector<int>& prices);
+    // 309. 最佳买卖股票时机含冷冻期
+    int maxProfit_icooldown(std::vector<int>& prices);
+    // 714. 买卖股票的最佳时机含手续费
+    int maxProfit_fee(std::vector<int>& prices, int fee);
+    // 123. 买卖股票的最佳时机 III
+    int maxProfit_2(std::vector<int>& prices);
+    // 188. 买卖股票的最佳时机 IV
+    int maxProfit_k(int k, std::vector<int>& prices);
+
+    // 机器人达到指定位置方法数
+    long long getSolutions(int n, int m, int k, int p);
 };
 
 

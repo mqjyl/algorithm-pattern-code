@@ -16,7 +16,7 @@ void printList(ListNode *head){
     }
     std::cout << ']' << std::endl;
 }
-
+/* 测试链表相关函数 */
 void testList(){
     //int gArray[]  = {1,1,7,12,2,6,3,4,9,5,9,11,8,6,7,8,9,10,10,11};
 //    int gArray[] = {1,1};
@@ -52,6 +52,7 @@ void testList(){
     printList(gList1);
 }
 
+/* 测试二叉树相关函数 */
 void testTree(){
     std::vector<int> gPreorder = {3,9,20,15,7};
     std::vector<int> gInorder = {9,3,15,20,7};
@@ -119,6 +120,10 @@ void testGraph(){
     //testDijkstra();
     //testPrim();
     testKruscal();
+}
+
+void testDP(){
+
 }
 
 int main() {

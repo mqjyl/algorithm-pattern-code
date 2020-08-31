@@ -2,7 +2,7 @@
 // Created by mqjyl on 2020/8/12.
 //
 
-#include "BFS_DFS.h"
+#include "../BFS_DFS.h"
 using namespace std;
 
 void setY(std::vector<std::vector<char>>& board, int x, int y, int xLen, int yLen){

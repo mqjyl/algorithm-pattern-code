@@ -2,7 +2,7 @@
 // Created by mqjyl on 2020/7/29.
 //
 #include <algorithm>
-#include "BackTracking.h"
+#include "../BackTracking.h"
 
 void backtrack(std::vector<std::vector<int>> &result, std::vector<int> &track, std::vector<int>& nums){
     if(track.size() == nums.size()){

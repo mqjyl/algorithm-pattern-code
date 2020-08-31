@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "SortTool.h"
+#include "../SortTool.h"
 // 冒泡排序
 std::vector<int> SortTool::bubbleSort(std::vector<int>& nums) {
     int len = nums.size();

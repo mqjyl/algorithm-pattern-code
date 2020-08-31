@@ -80,61 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/algorithm-pattern-code/BFS_DFS.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/BFS_DFS.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BackTracking.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/BackTracking.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BinarySearchTree.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/BinarySearchTree.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BinaryTree.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/BinaryTree.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BitOperations.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/BitOperations.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/DivideConquer.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/DivideConquer.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/DynamicProgramming.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/DynamicProgramming.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/GraphHandler.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/GraphHandler.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/HashTable.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/HashTable.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/ListHandler.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/ListHandler.h">
@@ -143,43 +113,73 @@
 		<Unit filename="D:/algorithm-pattern-code/Nodes.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/OtherExecs.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/OtherExecs.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/Recursive.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/Recursive.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/SlidingWindow.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/SlidingWindow.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/SortTool.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/SortTool.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/StackAndQueue.cpp">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/StackAndQueue.h">
-			<Option target="algorithm_pattern_code"/>
-		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/StringHandler.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/StringHandler.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/main.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/BFS_DFS.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/BackTracking.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/BinarySearchTree.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/BinaryTree.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/BitOperations.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/DivideConquer.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/DynamicProgramming.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/GraphHandler.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/HashTable.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/ListHandler.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/OtherExecs.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/Recursive.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/SlidingWindow.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/SortTool.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/StackAndQueue.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/StringHandler.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/CMakeLists.txt">

@@ -50,6 +50,9 @@ public:
 
     // 113. 路径总和 II
     std::vector<std::vector<int>> pathSum(TreeNode* root, int sum);
+
+    // 逆时针打印完全二叉树的边界节点
+    std::vector<int> getSeq(int n, std::vector<int>& tree);
 };
 
 

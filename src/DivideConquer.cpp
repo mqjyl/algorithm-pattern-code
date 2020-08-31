@@ -3,7 +3,7 @@
 //
 
 #include <climits>
-#include "DivideConquer.h"
+#include "../DivideConquer.h"
 
 int maxSubArrayRecursion(std::vector<int>& nums, int start, int stop){
     if(stop < start){

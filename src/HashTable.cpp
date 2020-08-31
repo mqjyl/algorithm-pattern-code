@@ -3,7 +3,7 @@
 //
 #include<unordered_map>
 #include <algorithm>
-#include "HashTable.h"
+#include "../HashTable.h"
 using namespace std;
 
 //std::vector<int> HashTable::twoSum(std::vector<int>& nums, int target){
