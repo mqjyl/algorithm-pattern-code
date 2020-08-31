@@ -3,7 +3,7 @@
 //
 #include <algorithm>
 #include <climits>
-#include "../DynamicProgramming.h"
+#include "../include/DynamicProgramming.h"
 
 using namespace std;
 

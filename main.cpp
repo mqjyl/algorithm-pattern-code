@@ -1,11 +1,11 @@
 #include <iostream>
 #include <set>
-#include "ListHandler.h"
-#include "BinaryTree.h"
-#include "SortTool.h"
-#include "SlidingWindow.h"
-#include "HashTable.h"
-#include "GraphHandler.h"
+#include "include/ListHandler.h"
+#include "include/BinaryTree.h"
+#include "include/SortTool.h"
+#include "include/SlidingWindow.h"
+#include "include/HashTable.h"
+#include "include/GraphHandler.h"
 
 void printList(ListNode *head){
     std::cout << '[';

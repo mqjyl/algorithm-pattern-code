@@ -7,7 +7,7 @@
 #include <queue>
 #include <algorithm>
 #include <climits>
-#include "../BinaryTree.h"
+#include "../include/BinaryTree.h"
 
 using namespace std;
 

@@ -80,55 +80,55 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/algorithm-pattern-code/BFS_DFS.h">
+		<Unit filename="D:/algorithm-pattern-code/include/BFS_DFS.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BackTracking.h">
+		<Unit filename="D:/algorithm-pattern-code/include/BackTracking.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BinarySearchTree.h">
+		<Unit filename="D:/algorithm-pattern-code/include/BinarySearchTree.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BinaryTree.h">
+		<Unit filename="D:/algorithm-pattern-code/include/BinaryTree.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/BitOperations.h">
+		<Unit filename="D:/algorithm-pattern-code/include/BitOperations.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/DivideConquer.h">
+		<Unit filename="D:/algorithm-pattern-code/include/DivideConquer.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/DynamicProgramming.h">
+		<Unit filename="D:/algorithm-pattern-code/include/DynamicProgramming.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/GraphHandler.h">
+		<Unit filename="D:/algorithm-pattern-code/include/GraphHandler.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/HashTable.h">
+		<Unit filename="D:/algorithm-pattern-code/include/HashTable.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/ListHandler.h">
+		<Unit filename="D:/algorithm-pattern-code/include/ListHandler.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/Nodes.h">
+		<Unit filename="D:/algorithm-pattern-code/include/Nodes.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/OtherExecs.h">
+		<Unit filename="D:/algorithm-pattern-code/include/OtherExecs.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/Recursive.h">
+		<Unit filename="D:/algorithm-pattern-code/include/Recursive.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/SlidingWindow.h">
+		<Unit filename="D:/algorithm-pattern-code/include/SlidingWindow.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/SortTool.h">
+		<Unit filename="D:/algorithm-pattern-code/include/SortTool.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/StackAndQueue.h">
+		<Unit filename="D:/algorithm-pattern-code/include/StackAndQueue.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
-		<Unit filename="D:/algorithm-pattern-code/StringHandler.h">
+		<Unit filename="D:/algorithm-pattern-code/include/StringHandler.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/main.cpp">

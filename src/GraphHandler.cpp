@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <functional>
 #include <memory>
-#include "../GraphHandler.h"
+#include "../include/GraphHandler.h"
 
 using namespace std;
 

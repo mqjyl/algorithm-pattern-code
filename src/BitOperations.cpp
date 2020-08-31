@@ -3,7 +3,7 @@
 //
 
 #include<set>
-#include "../BitOperations.h"
+#include "../include/BitOperations.h"
 
 int BitOperations::singleNumber1(std::vector<int>& nums) {
     int result = 0;

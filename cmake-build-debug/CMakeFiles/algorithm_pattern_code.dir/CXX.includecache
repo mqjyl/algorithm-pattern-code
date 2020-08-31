@@ -6,85 +6,85 @@
 
 #IncludeRegexTransform: 
 
-D:/algorithm-pattern-code/BFS_DFS.h
+D:/algorithm-pattern-code/include/BFS_DFS.h
 vector
 -
 
-D:/algorithm-pattern-code/BackTracking.h
+D:/algorithm-pattern-code/include/BackTracking.h
 vector
 -
 string
 -
 
-D:/algorithm-pattern-code/BinarySearchTree.h
+D:/algorithm-pattern-code/include/BinarySearchTree.h
 
-D:/algorithm-pattern-code/BinaryTree.h
+D:/algorithm-pattern-code/include/BinaryTree.h
 vector
 -
 Nodes.h
-D:/algorithm-pattern-code/Nodes.h
+D:/algorithm-pattern-code/include/Nodes.h
 
-D:/algorithm-pattern-code/BitOperations.h
+D:/algorithm-pattern-code/include/BitOperations.h
 vector
 -
 
-D:/algorithm-pattern-code/DivideConquer.h
+D:/algorithm-pattern-code/include/DivideConquer.h
 vector
 -
 
-D:/algorithm-pattern-code/DynamicProgramming.h
+D:/algorithm-pattern-code/include/DynamicProgramming.h
 vector
 -
 
-D:/algorithm-pattern-code/GraphHandler.h
+D:/algorithm-pattern-code/include/GraphHandler.h
 vector
 -
 Nodes.h
-D:/algorithm-pattern-code/Nodes.h
+D:/algorithm-pattern-code/include/Nodes.h
 
-D:/algorithm-pattern-code/HashTable.h
+D:/algorithm-pattern-code/include/HashTable.h
 vector
 -
 unordered_map
 -
 
-D:/algorithm-pattern-code/ListHandler.h
+D:/algorithm-pattern-code/include/ListHandler.h
 Nodes.h
-D:/algorithm-pattern-code/Nodes.h
+D:/algorithm-pattern-code/include/Nodes.h
 
-D:/algorithm-pattern-code/Nodes.h
+D:/algorithm-pattern-code/include/Nodes.h
 stdio.h
 -
 vector
 -
 
-D:/algorithm-pattern-code/OtherExecs.h
+D:/algorithm-pattern-code/include/OtherExecs.h
 vector
 -
 
-D:/algorithm-pattern-code/Recursive.h
+D:/algorithm-pattern-code/include/Recursive.h
 vector
 -
 Nodes.h
-D:/algorithm-pattern-code/Nodes.h
+D:/algorithm-pattern-code/include/Nodes.h
 
-D:/algorithm-pattern-code/SlidingWindow.h
+D:/algorithm-pattern-code/include/SlidingWindow.h
 vector
 -
 string
 -
 
-D:/algorithm-pattern-code/SortTool.h
+D:/algorithm-pattern-code/include/SortTool.h
 vector
 -
 
-D:/algorithm-pattern-code/StackAndQueue.h
+D:/algorithm-pattern-code/include/StackAndQueue.h
 stack
 -
 queue
 -
 
-D:/algorithm-pattern-code/StringHandler.h
+D:/algorithm-pattern-code/include/StringHandler.h
 string
 -
 vector
@@ -95,32 +95,32 @@ iostream
 -
 set
 -
-ListHandler.h
-D:/algorithm-pattern-code/ListHandler.h
-BinaryTree.h
-D:/algorithm-pattern-code/BinaryTree.h
-SortTool.h
-D:/algorithm-pattern-code/SortTool.h
-SlidingWindow.h
-D:/algorithm-pattern-code/SlidingWindow.h
-HashTable.h
-D:/algorithm-pattern-code/HashTable.h
-GraphHandler.h
-D:/algorithm-pattern-code/GraphHandler.h
+include/ListHandler.h
+D:/algorithm-pattern-code/include/ListHandler.h
+include/BinaryTree.h
+D:/algorithm-pattern-code/include/BinaryTree.h
+include/SortTool.h
+D:/algorithm-pattern-code/include/SortTool.h
+include/SlidingWindow.h
+D:/algorithm-pattern-code/include/SlidingWindow.h
+include/HashTable.h
+D:/algorithm-pattern-code/include/HashTable.h
+include/GraphHandler.h
+D:/algorithm-pattern-code/include/GraphHandler.h
 
 D:/algorithm-pattern-code/src/BFS_DFS.cpp
-../BFS_DFS.h
-D:/algorithm-pattern-code/BFS_DFS.h
+../include/BFS_DFS.h
+D:/algorithm-pattern-code/include/BFS_DFS.h
 
 D:/algorithm-pattern-code/src/BackTracking.cpp
 algorithm
 -
-../BackTracking.h
-D:/algorithm-pattern-code/BackTracking.h
+../include/BackTracking.h
+D:/algorithm-pattern-code/include/BackTracking.h
 
 D:/algorithm-pattern-code/src/BinarySearchTree.cpp
-../BinarySearchTree.h
-D:/algorithm-pattern-code/BinarySearchTree.h
+../include/BinarySearchTree.h
+D:/algorithm-pattern-code/include/BinarySearchTree.h
 
 D:/algorithm-pattern-code/src/BinaryTree.cpp
 iostream
@@ -135,28 +135,28 @@ algorithm
 -
 climits
 -
-../BinaryTree.h
-D:/algorithm-pattern-code/BinaryTree.h
+../include/BinaryTree.h
+D:/algorithm-pattern-code/include/BinaryTree.h
 
 D:/algorithm-pattern-code/src/BitOperations.cpp
 set
 -
-../BitOperations.h
-D:/algorithm-pattern-code/BitOperations.h
+../include/BitOperations.h
+D:/algorithm-pattern-code/include/BitOperations.h
 
 D:/algorithm-pattern-code/src/DivideConquer.cpp
 climits
 -
-../DivideConquer.h
-D:/algorithm-pattern-code/DivideConquer.h
+../include/DivideConquer.h
+D:/algorithm-pattern-code/include/DivideConquer.h
 
 D:/algorithm-pattern-code/src/DynamicProgramming.cpp
 algorithm
 -
 climits
 -
-../DynamicProgramming.h
-D:/algorithm-pattern-code/DynamicProgramming.h
+../include/DynamicProgramming.h
+D:/algorithm-pattern-code/include/DynamicProgramming.h
 
 D:/algorithm-pattern-code/src/GraphHandler.cpp
 iostream
@@ -169,16 +169,16 @@ functional
 -
 memory
 -
-../GraphHandler.h
-D:/algorithm-pattern-code/GraphHandler.h
+../include/GraphHandler.h
+D:/algorithm-pattern-code/include/GraphHandler.h
 
 D:/algorithm-pattern-code/src/HashTable.cpp
 unordered_map
 -
 algorithm
 -
-../HashTable.h
-D:/algorithm-pattern-code/HashTable.h
+../include/HashTable.h
+D:/algorithm-pattern-code/include/HashTable.h
 
 D:/algorithm-pattern-code/src/ListHandler.cpp
 iostream
@@ -189,16 +189,16 @@ set
 -
 map
 -
-../ListHandler.h
-D:/algorithm-pattern-code/ListHandler.h
+../include/ListHandler.h
+D:/algorithm-pattern-code/include/ListHandler.h
 
 D:/algorithm-pattern-code/src/OtherExecs.cpp
-../OtherExecs.h
-D:/algorithm-pattern-code/OtherExecs.h
+../include/OtherExecs.h
+D:/algorithm-pattern-code/include/OtherExecs.h
 
 D:/algorithm-pattern-code/src/Recursive.cpp
-../Recursive.h
-D:/algorithm-pattern-code/Recursive.h
+../include/Recursive.h
+D:/algorithm-pattern-code/include/Recursive.h
 
 D:/algorithm-pattern-code/src/SlidingWindow.cpp
 unordered_map
@@ -207,22 +207,22 @@ climits
 -
 iostream
 -
-../SlidingWindow.h
-D:/algorithm-pattern-code/SlidingWindow.h
+../include/SlidingWindow.h
+D:/algorithm-pattern-code/include/SlidingWindow.h
 
 D:/algorithm-pattern-code/src/SortTool.cpp
 iostream
 -
-../SortTool.h
-D:/algorithm-pattern-code/SortTool.h
+../include/SortTool.h
+D:/algorithm-pattern-code/include/SortTool.h
 
 D:/algorithm-pattern-code/src/StackAndQueue.cpp
 iostream
 -
-../StackAndQueue.h
-D:/algorithm-pattern-code/StackAndQueue.h
+../include/StackAndQueue.h
+D:/algorithm-pattern-code/include/StackAndQueue.h
 
 D:/algorithm-pattern-code/src/StringHandler.cpp
-../StringHandler.h
-D:/algorithm-pattern-code/StringHandler.h
+../include/StringHandler.h
+D:/algorithm-pattern-code/include/StringHandler.h
 
