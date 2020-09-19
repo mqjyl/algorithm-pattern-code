@@ -5,6 +5,7 @@
 #include <climits>
 #include "../include/DivideConquer.h"
 
+// 最大子序和
 int maxSubArrayRecursion(std::vector<int>& nums, int start, int stop){
     if(stop < start){
         return INT_MIN;

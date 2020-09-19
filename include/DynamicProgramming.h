@@ -49,10 +49,7 @@ public:
      */
     int jump(std::vector<int>& nums);
 
-    // 0-1背包问题
-
-
-    // 股票买卖问题
+    /*  股票买卖问题  */
     // 121. 买卖股票的最佳时机
     int maxProfit(std::vector<int>& prices);
     // 122. 买卖股票的最佳时机 II
@@ -68,6 +65,10 @@ public:
 
     // 机器人达到指定位置方法数
     long long getSolutions(int n, int m, int k, int p);
+
+    /*  背包问题  */
+    // 01背包
+    int maxValue(std::vector<int>& values, std::vector<int>& weight, int m);
 };
 
 

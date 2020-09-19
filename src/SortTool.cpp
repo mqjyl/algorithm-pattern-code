@@ -20,11 +20,6 @@ std::vector<int> SortTool::bubbleSort(std::vector<int>& nums) {
     return nums;
 }
 
-/***
- * 设计一个数据结构 list: rpush rpop lpush lpop index 五种方法的时间复杂度均为 O(1),
- * 数据量上限是100w（我回答使用双端队列+hashMap, 面试官说可以用两个数组实现）
- * */
-
 // 快速排序
 int partition(std::vector<int>& nums, int start, int stop){
     int idx = start + 1;
@@ -66,10 +61,12 @@ std::vector<int> SortTool::insertionSort(std::vector<int>& nums){
     }
     return nums;
 }
+
 // 希尔排序
 std::vector<int> SortTool::shellSort(std::vector<int>& nums){
 
 }
+
 // 归并排序
 void merge_sort(std::vector<int>& nums, int start, int stop){
     if(stop >= nums.size() || stop - start <= 0)

@@ -10,12 +10,10 @@
 
 using namespace std;
 
+/**
+ * 基本问题
+ * */
 const int MAX_LEN = 100001;
-
-// 133. Clone Graph
-Node* GraphHandler::cloneGraph(Node* node){
-    return NULL;
-}
 
 // 最短路径长度 Dijkstra
 void GraphHandler::Dijkstra(int N, int S, vector<int>& dst, vector<vector<int>>& graph){
@@ -271,4 +269,12 @@ void testKruscal(){
         GraphHandler graphHandler;
         cout << graphHandler.Kruscal(root, graph) << endl;
     }
+}
+
+/**
+ * 题型
+ * */
+// 133. Clone Graph
+Node* GraphHandler::cloneGraph(Node* node){
+    return NULL;
 }

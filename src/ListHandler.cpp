@@ -18,6 +18,7 @@ ListNode* ListHandler::createList(int *pArray, int pCount){
     }
     return head;
 }
+
 // remove-duplicates-from-sorted-list
 ListNode* ListHandler::deleteDuplicates(ListNode* head) {
     ListNode *ptr = head;
@@ -31,6 +32,7 @@ ListNode* ListHandler::deleteDuplicates(ListNode* head) {
     }
     return head;
 }
+
 // remove-duplicates-from-sorted-list II
 ListNode* ListHandler::deleteDuplicates2(ListNode* head) {
     if(!head)
@@ -58,6 +60,7 @@ ListNode* ListHandler::deleteDuplicates2(ListNode* head) {
     delete prev_ptr;
     return head;
 }
+
 // Reverse a singly linked list.
 ListNode* ListHandler::reverseList(ListNode* head) {
     if(!(head && head->next))
@@ -74,6 +77,7 @@ ListNode* ListHandler::reverseList(ListNode* head) {
     head = newHead;
     return head;
 }
+
 // Reverse a singly linked list: recursive implementation
 ListNode* ListHandler::reverseListRecursion(ListNode* head){      // ??? 会出现断链
     if(!(head && head->next))
@@ -85,6 +89,7 @@ ListNode* ListHandler::reverseListRecursion(ListNode* head){      // ??? 会出�
     nextPtr->next = ptr;
     return subHead;
 }
+
 // 反转从位置 m 到 n 的链表。使用一趟扫描完成反转。
 ListNode* ListHandler::reverseBetween(ListNode* head, int m, int n){
     if(!head->next)
@@ -123,6 +128,7 @@ ListNode* ListHandler::reverseBetween(ListNode* head, int m, int n){
     in_tail->next = ptr;
     return head;
 }
+
 //给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
 //你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
 ListNode* swapOnePair(ListNode* pre_head){
@@ -138,6 +144,7 @@ ListNode* swapOnePair(ListNode* pre_head){
     swapOnePair(tmp);
     return pre_head->next;
 }
+
 ListNode* ListHandler::swapPairs(ListNode* head){
     /*
     if(!(head && head->next))
@@ -164,6 +171,7 @@ ListNode* ListHandler::swapPairs(ListNode* head){
     dummy->next = head;
     return swapOnePair(dummy);
 }
+
 // 将两个升序链表合并为一个新的 升序 链表并返回。
 ListNode* ListHandler::mergeTwoLists(ListNode* l1, ListNode* l2){
     ListNode *head = new ListNode(0);
@@ -189,6 +197,7 @@ ListNode* ListHandler::mergeTwoLists(ListNode* l1, ListNode* l2){
     delete ptr;
     return head;
 }
+
 // 给定一个链表和一个特定值 x，对链表进行分隔，使得所有小于 x 的节点都在大于或等于 x 的节点之前。
 // 应当保留两个分区中每个节点的初始相对位置。
 ListNode* ListHandler::partition(ListNode* head, int x){
@@ -241,6 +250,7 @@ ListNode* ListHandler::sortList(ListNode* head){
     // 合并
     return this->mergeTwoLists(head1, head2);
 }
+
 // 重排链表
 /*
 void ListHandler::reorderList(ListNode* head){
@@ -298,6 +308,7 @@ void ListHandler::reorderList(ListNode* head){
         } // 奇数个的情况
     }
 }
+
 // 判断链表是否有环
 /*
 bool ListHandler::hasCycle(ListNode *head){
@@ -328,6 +339,7 @@ bool ListHandler::hasCycle(ListNode *head){
     }
     return false;
 }
+
 // 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
 ListNode *ListHandler::detectCycle(ListNode *head){
     if(!head || !head->next)
@@ -351,6 +363,7 @@ ListNode *ListHandler::detectCycle(ListNode *head){
     }
     return NULL;
 }
+
 // 判断一个链表是否为回文链表。
 bool ListHandler::isPalindrome(ListNode* head){
     if(!head || !head->next)
@@ -374,6 +387,7 @@ bool ListHandler::isPalindrome(ListNode* head){
     }
     return true;
 }
+
 // 给定一个链表，每个节点包含一个额外增加的随机指针，该指针可以指向链表中的任何节点或空节点。
 // 要求返回这个链表的 深拷贝。
 /*

@@ -6,6 +6,7 @@
 #include "../include/HashTable.h"
 using namespace std;
 
+// 两数之和
 //std::vector<int> HashTable::twoSum(std::vector<int>& nums, int target){
 //    std::unordered_map<int, int> ihash;
 //    for(int i = 0;i < nums.size(); ++i){

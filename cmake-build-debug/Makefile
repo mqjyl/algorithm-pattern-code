@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Array_Matrix.obj: src/Array_Matrix.cpp.obj
+
+.PHONY : src/Array_Matrix.obj
+
+# target to build an object file
+src/Array_Matrix.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj
+.PHONY : src/Array_Matrix.cpp.obj
+
+src/Array_Matrix.i: src/Array_Matrix.cpp.i
+
+.PHONY : src/Array_Matrix.i
+
+# target to preprocess a source file
+src/Array_Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.i
+.PHONY : src/Array_Matrix.cpp.i
+
+src/Array_Matrix.s: src/Array_Matrix.cpp.s
+
+.PHONY : src/Array_Matrix.s
+
+# target to generate assembly for a file
+src/Array_Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.s
+.PHONY : src/Array_Matrix.cpp.s
+
 src/BFS_DFS.obj: src/BFS_DFS.cpp.obj
 
 .PHONY : src/BFS_DFS.obj
@@ -419,33 +446,6 @@ src/ListHandler.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.s
 .PHONY : src/ListHandler.cpp.s
 
-src/OtherExecs.obj: src/OtherExecs.cpp.obj
-
-.PHONY : src/OtherExecs.obj
-
-# target to build an object file
-src/OtherExecs.cpp.obj:
-	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj
-.PHONY : src/OtherExecs.cpp.obj
-
-src/OtherExecs.i: src/OtherExecs.cpp.i
-
-.PHONY : src/OtherExecs.i
-
-# target to preprocess a source file
-src/OtherExecs.cpp.i:
-	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.i
-.PHONY : src/OtherExecs.cpp.i
-
-src/OtherExecs.s: src/OtherExecs.cpp.s
-
-.PHONY : src/OtherExecs.s
-
-# target to generate assembly for a file
-src/OtherExecs.cpp.s:
-	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.s
-.PHONY : src/OtherExecs.cpp.s
-
 src/Recursive.obj: src/Recursive.cpp.obj
 
 .PHONY : src/Recursive.obj
@@ -581,6 +581,141 @@ src/StringHandler.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.s
 .PHONY : src/StringHandler.cpp.s
 
+src/tools/AlternatePrinter.obj: src/tools/AlternatePrinter.cpp.obj
+
+.PHONY : src/tools/AlternatePrinter.obj
+
+# target to build an object file
+src/tools/AlternatePrinter.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj
+.PHONY : src/tools/AlternatePrinter.cpp.obj
+
+src/tools/AlternatePrinter.i: src/tools/AlternatePrinter.cpp.i
+
+.PHONY : src/tools/AlternatePrinter.i
+
+# target to preprocess a source file
+src/tools/AlternatePrinter.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.i
+.PHONY : src/tools/AlternatePrinter.cpp.i
+
+src/tools/AlternatePrinter.s: src/tools/AlternatePrinter.cpp.s
+
+.PHONY : src/tools/AlternatePrinter.s
+
+# target to generate assembly for a file
+src/tools/AlternatePrinter.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.s
+.PHONY : src/tools/AlternatePrinter.cpp.s
+
+src/tools/BlockQueue.obj: src/tools/BlockQueue.cpp.obj
+
+.PHONY : src/tools/BlockQueue.obj
+
+# target to build an object file
+src/tools/BlockQueue.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj
+.PHONY : src/tools/BlockQueue.cpp.obj
+
+src/tools/BlockQueue.i: src/tools/BlockQueue.cpp.i
+
+.PHONY : src/tools/BlockQueue.i
+
+# target to preprocess a source file
+src/tools/BlockQueue.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.i
+.PHONY : src/tools/BlockQueue.cpp.i
+
+src/tools/BlockQueue.s: src/tools/BlockQueue.cpp.s
+
+.PHONY : src/tools/BlockQueue.s
+
+# target to generate assembly for a file
+src/tools/BlockQueue.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.s
+.PHONY : src/tools/BlockQueue.cpp.s
+
+src/tools/CircularQueue.obj: src/tools/CircularQueue.cpp.obj
+
+.PHONY : src/tools/CircularQueue.obj
+
+# target to build an object file
+src/tools/CircularQueue.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj
+.PHONY : src/tools/CircularQueue.cpp.obj
+
+src/tools/CircularQueue.i: src/tools/CircularQueue.cpp.i
+
+.PHONY : src/tools/CircularQueue.i
+
+# target to preprocess a source file
+src/tools/CircularQueue.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.i
+.PHONY : src/tools/CircularQueue.cpp.i
+
+src/tools/CircularQueue.s: src/tools/CircularQueue.cpp.s
+
+.PHONY : src/tools/CircularQueue.s
+
+# target to generate assembly for a file
+src/tools/CircularQueue.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.s
+.PHONY : src/tools/CircularQueue.cpp.s
+
+src/tools/WfirstRWLock.obj: src/tools/WfirstRWLock.cpp.obj
+
+.PHONY : src/tools/WfirstRWLock.obj
+
+# target to build an object file
+src/tools/WfirstRWLock.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj
+.PHONY : src/tools/WfirstRWLock.cpp.obj
+
+src/tools/WfirstRWLock.i: src/tools/WfirstRWLock.cpp.i
+
+.PHONY : src/tools/WfirstRWLock.i
+
+# target to preprocess a source file
+src/tools/WfirstRWLock.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.i
+.PHONY : src/tools/WfirstRWLock.cpp.i
+
+src/tools/WfirstRWLock.s: src/tools/WfirstRWLock.cpp.s
+
+.PHONY : src/tools/WfirstRWLock.s
+
+# target to generate assembly for a file
+src/tools/WfirstRWLock.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.s
+.PHONY : src/tools/WfirstRWLock.cpp.s
+
+utils.obj: utils.cpp.obj
+
+.PHONY : utils.obj
+
+# target to build an object file
+utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj
+.PHONY : utils.cpp.obj
+
+utils.i: utils.cpp.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -593,6 +728,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Array_Matrix.obj
+	@echo ... src/Array_Matrix.i
+	@echo ... src/Array_Matrix.s
 	@echo ... src/BFS_DFS.obj
 	@echo ... src/BFS_DFS.i
 	@echo ... src/BFS_DFS.s
@@ -623,9 +761,6 @@ help:
 	@echo ... src/ListHandler.obj
 	@echo ... src/ListHandler.i
 	@echo ... src/ListHandler.s
-	@echo ... src/OtherExecs.obj
-	@echo ... src/OtherExecs.i
-	@echo ... src/OtherExecs.s
 	@echo ... src/Recursive.obj
 	@echo ... src/Recursive.i
 	@echo ... src/Recursive.s
@@ -641,6 +776,21 @@ help:
 	@echo ... src/StringHandler.obj
 	@echo ... src/StringHandler.i
 	@echo ... src/StringHandler.s
+	@echo ... src/tools/AlternatePrinter.obj
+	@echo ... src/tools/AlternatePrinter.i
+	@echo ... src/tools/AlternatePrinter.s
+	@echo ... src/tools/BlockQueue.obj
+	@echo ... src/tools/BlockQueue.i
+	@echo ... src/tools/BlockQueue.s
+	@echo ... src/tools/CircularQueue.obj
+	@echo ... src/tools/CircularQueue.i
+	@echo ... src/tools/CircularQueue.s
+	@echo ... src/tools/WfirstRWLock.obj
+	@echo ... src/tools/WfirstRWLock.i
+	@echo ... src/tools/WfirstRWLock.s
+	@echo ... utils.obj
+	@echo ... utils.i
+	@echo ... utils.s
 .PHONY : help
 
 

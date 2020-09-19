@@ -7,6 +7,7 @@
 #include<vector>
 
 class DivideConquer {
+    // 最大子序和
     int maxSubArray(std::vector<int>& nums);
 };
 

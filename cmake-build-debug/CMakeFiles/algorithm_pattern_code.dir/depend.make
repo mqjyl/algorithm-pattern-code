@@ -8,7 +8,12 @@ CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/ListHandler.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/Nodes.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/SlidingWindow.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/SortTool.h
+CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/tools/BlockQueue.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../utils.h
+
+CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj: ../include/Array_Matrix.h
+CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj: ../src/Array_Matrix.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj: ../include/BFS_DFS.h
 CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj: ../src/BFS_DFS.cpp
@@ -43,9 +48,6 @@ CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj: ../include/ListHa
 CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj: ../include/Nodes.h
 CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj: ../src/ListHandler.cpp
 
-CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj: ../include/OtherExecs.h
-CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj: ../src/OtherExecs.cpp
-
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj: ../include/Nodes.h
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj: ../include/Recursive.h
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj: ../src/Recursive.cpp
@@ -61,4 +63,19 @@ CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj: ../src/StackAnd
 
 CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj: ../include/StringHandler.h
 CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj: ../src/StringHandler.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj: ../include/tools/AlternatePrinter.h
+CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj: ../src/tools/AlternatePrinter.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj: ../include/tools/BlockQueue.h
+CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj: ../src/tools/BlockQueue.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj: ../include/tools/CircularQueue.h
+CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj: ../src/tools/CircularQueue.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj: ../include/tools/WfirstRWLock.h
+CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj: ../src/tools/WfirstRWLock.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj: ../utils.cpp
+CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj: ../utils.h
 

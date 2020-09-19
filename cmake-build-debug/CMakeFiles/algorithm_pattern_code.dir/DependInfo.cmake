@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/algorithm-pattern-code/main.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj"
+  "D:/algorithm-pattern-code/src/Array_Matrix.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj"
   "D:/algorithm-pattern-code/src/BFS_DFS.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj"
   "D:/algorithm-pattern-code/src/BackTracking.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.obj"
   "D:/algorithm-pattern-code/src/BinarySearchTree.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.obj"
@@ -15,12 +16,16 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/algorithm-pattern-code/src/GraphHandler.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.obj"
   "D:/algorithm-pattern-code/src/HashTable.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.obj"
   "D:/algorithm-pattern-code/src/ListHandler.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj"
-  "D:/algorithm-pattern-code/src/OtherExecs.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj"
   "D:/algorithm-pattern-code/src/Recursive.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj"
   "D:/algorithm-pattern-code/src/SlidingWindow.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.obj"
   "D:/algorithm-pattern-code/src/SortTool.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.obj"
   "D:/algorithm-pattern-code/src/StackAndQueue.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj"
   "D:/algorithm-pattern-code/src/StringHandler.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj"
+  "D:/algorithm-pattern-code/src/tools/AlternatePrinter.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj"
+  "D:/algorithm-pattern-code/src/tools/BlockQueue.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj"
+  "D:/algorithm-pattern-code/src/tools/CircularQueue.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj"
+  "D:/algorithm-pattern-code/src/tools/WfirstRWLock.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj"
+  "D:/algorithm-pattern-code/utils.cpp" "D:/algorithm-pattern-code/cmake-build-debug/CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

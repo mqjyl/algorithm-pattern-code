@@ -65,6 +65,29 @@ TreeNode* BinaryTree::buildTreePost(std::vector<int>& inorder, std::vector<int>&
     }
     return treeNode;
 }
+// 根据完全二叉树数组创建二叉树
+TreeNode *BinaryTree::createTree(const vector<int> &nums, const int val){
+    int len = nums.size();
+    queue<pair<TreeNode *, int> > iqueue;
+    TreeNode *root = new TreeNode(nums[0]);
+    iqueue.push(make_pair(root, 0));
+    while(!iqueue.empty()){
+        auto &ptr = iqueue.front();
+        iqueue.pop();
+        int idx = ptr.second * 2;
+        if(idx + 1 < len && nums[idx + 1] != val){
+            ptr.first->left = new TreeNode(nums[idx + 1]);
+            if(2 * (idx + 1) + 1 < len)
+                iqueue.push(make_pair(ptr.first->left, idx + 1));
+        }
+        if(idx + 2 < len && nums[idx + 2] != val){
+            ptr.first->right = new TreeNode(nums[idx + 2]);
+            if(2 * (idx + 2) + 1 < len)
+                iqueue.push(make_pair(ptr.first->right, idx + 2));
+        }
+    }
+    return root;
+}
 
 
 // 前序遍历：递归实现
@@ -235,7 +258,6 @@ std::vector<std::vector<int>> BinaryTree::levelOrder(TreeNode* root){
     return result;
 }
 
-
 // 给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
 std::vector<std::vector<int>> BinaryTree::levelOrderBottom(TreeNode* root){
     std::vector<std::vector<int>> result;
@@ -273,6 +295,7 @@ std::vector<std::vector<int>> BinaryTree::levelOrderBottom(TreeNode* root){
     }
     return result;
 }
+
 // 给定一个二叉树，返回其节点值的锯齿形层次遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。
 std::vector<std::vector<int>> BinaryTree::zigzagLevelOrder(TreeNode* root){
     /*
@@ -354,6 +377,7 @@ std::vector<std::vector<int>> BinaryTree::zigzagLevelOrder(TreeNode* root){
     }
     return result;
 }
+
 // 给定一个非空二叉树, 返回一个由每层节点平均值组成的数组。
 std::vector<double> BinaryTree::averageOfLevels(TreeNode* root){
     std::vector<double> result;
@@ -387,7 +411,6 @@ std::vector<double> BinaryTree::averageOfLevels(TreeNode* root){
     }
     return result;
 }
-
 
 // 给定一个二叉树，找出其最大深度。
 int BinaryTree::maxDepthRecursion(TreeNode* root){
@@ -534,7 +557,6 @@ std::vector<std::vector<int>> pathSum(TreeNode* root, int sum){
     return result;
 }
 
-using namespace std;
 // 逆时针打印完全二叉树的边界节点
 vector<int> BinaryTree::getSeq(int n, vector<int>& tree){
     vector<int> ans;
@@ -566,4 +588,130 @@ vector<int> BinaryTree::getSeq(int n, vector<int>& tree){
         j = (j - 2) / 2;
     }
     return ans;
+}
+
+// 297. 二叉树的序列化与反序列化
+// Encodes a tree to a single string.
+std::string BinaryTree::serialize(TreeNode* root){
+    string result;
+    if(!root)
+        return "[]";
+    queue<TreeNode *> pqueue;
+    pqueue.push(root);
+    while(true){
+        bool sign = true;
+        int len = pqueue.size();
+        for(int i = 0; i < len; i++) {
+            TreeNode *ptr = pqueue.front();
+            pqueue.pop();
+            if (ptr) {
+                result.append(to_string(ptr->val));
+                result.push_back(',');
+                if (ptr->left) {
+                    sign = false;
+                    pqueue.push(ptr->left);
+                } else {
+                    pqueue.push(NULL);
+                }
+                if (ptr->right) {
+                    sign = false;
+                    pqueue.push(ptr->right);
+                } else {
+                    pqueue.push(NULL);
+                }
+            } else {
+                result.append("X,");
+                pqueue.push(NULL);
+                pqueue.push(NULL);
+            }
+        }
+        if(sign)
+            break;
+    }
+    while(!result.empty() && (result.back() == ',' || result.back() == 'X'))
+        result.pop_back();
+    return "[" + result + "]";
+}
+// Decodes your encoded data to tree.
+TreeNode* BinaryTree::deserialize(std::string data){
+    if(data.size() <= 2)
+        return NULL;
+    vector<string> tokens;
+    string str;
+    for(int i = 1; i < data.size() - 1; ++i){
+        if(data[i] == 'X'){
+            tokens.push_back("X");
+            i++;
+        }else if(data[i] == ','){
+            tokens.push_back(str);
+            str.clear();
+        }else{
+            str.push_back(data[i]);
+        }
+    }
+    tokens.push_back(str);
+    int len = tokens.size();
+    if(tokens.empty())
+        return NULL;
+    queue<pair<TreeNode *, int> > iqueue;
+    TreeNode *root = new TreeNode(stoi(tokens[0]));
+    iqueue.push(make_pair(root, 0));
+    while(!iqueue.empty()){
+        auto ptr = iqueue.front();
+        iqueue.pop();
+        int idx = 2 * ptr.second;
+        if(idx + 1 < len && tokens[idx + 1] != "X"){
+            ptr.first->left = new TreeNode(stoi(tokens[idx + 1]));
+            if(2 * (idx + 1) + 1 < len)
+                iqueue.push(make_pair(ptr.first->left, idx + 1));
+        }
+        if(idx + 2 < len && tokens[idx + 2] != "X"){
+            ptr.first->right = new TreeNode(stoi(tokens[idx + 2]));
+            if(2 * (idx + 2) + 1 < len)
+                iqueue.push(make_pair(ptr.first->right, idx + 2));
+        }
+    }
+    return root;
+}
+
+void getAncestors(TreeNode *root, TreeNode* node, vector<TreeNode *> &astack){
+    const TreeNode *cur;
+    TreeNode *ptr = root;
+    const TreeNode *last = NULL;
+    while(ptr != NULL || !astack.empty()){
+        while(ptr != NULL){
+            astack.push_back(ptr);
+            if(ptr == node){
+                return;
+            }
+            ptr = ptr->left;
+        }
+        cur = astack.back();
+        if(cur->right == NULL || cur->right == last){
+            astack.pop_back();
+            last = cur;
+        }else{
+            ptr = cur->right;
+        }
+    }
+}
+
+// 236. 二叉树的最近公共祖先
+TreeNode* BinaryTree::lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q){
+    vector<TreeNode *> astack1, astack2;
+    getAncestors(root, p, astack1);
+    getAncestors(root, q, astack2);
+    for(int i = astack1.size() - 1; i >= 0; --i){
+        for(int j = astack2.size() - 1; j >= 0; --j){
+            if(astack1[i] == astack2[j]){
+                return astack1[i];
+            }
+        }
+    }
+    return root;
+}
+
+// 剑指 Offer 28. 对称的二叉树
+bool BinaryTree::isSymmetric(TreeNode* root){
+
 }

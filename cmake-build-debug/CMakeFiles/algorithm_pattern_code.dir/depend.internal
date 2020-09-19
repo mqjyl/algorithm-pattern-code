@@ -9,7 +9,12 @@ CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj
  D:/algorithm-pattern-code/include/Nodes.h
  D:/algorithm-pattern-code/include/SlidingWindow.h
  D:/algorithm-pattern-code/include/SortTool.h
+ D:/algorithm-pattern-code/include/tools/BlockQueue.h
  D:/algorithm-pattern-code/main.cpp
+ D:/algorithm-pattern-code/utils.h
+CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj
+ D:/algorithm-pattern-code/include/Array_Matrix.h
+ D:/algorithm-pattern-code/src/Array_Matrix.cpp
 CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj
  D:/algorithm-pattern-code/include/BFS_DFS.h
  D:/algorithm-pattern-code/src/BFS_DFS.cpp
@@ -43,9 +48,6 @@ CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj
  D:/algorithm-pattern-code/include/ListHandler.h
  D:/algorithm-pattern-code/include/Nodes.h
  D:/algorithm-pattern-code/src/ListHandler.cpp
-CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj
- D:/algorithm-pattern-code/include/OtherExecs.h
- D:/algorithm-pattern-code/src/OtherExecs.cpp
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj
  D:/algorithm-pattern-code/include/Nodes.h
  D:/algorithm-pattern-code/include/Recursive.h
@@ -62,3 +64,18 @@ CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj
 CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj
  D:/algorithm-pattern-code/include/StringHandler.h
  D:/algorithm-pattern-code/src/StringHandler.cpp
+CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj
+ D:/algorithm-pattern-code/include/tools/AlternatePrinter.h
+ D:/algorithm-pattern-code/src/tools/AlternatePrinter.cpp
+CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj
+ D:/algorithm-pattern-code/include/tools/BlockQueue.h
+ D:/algorithm-pattern-code/src/tools/BlockQueue.cpp
+CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj
+ D:/algorithm-pattern-code/include/tools/CircularQueue.h
+ D:/algorithm-pattern-code/src/tools/CircularQueue.cpp
+CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj
+ D:/algorithm-pattern-code/include/tools/WfirstRWLock.h
+ D:/algorithm-pattern-code/src/tools/WfirstRWLock.cpp
+CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj
+ D:/algorithm-pattern-code/utils.cpp
+ D:/algorithm-pattern-code/utils.h

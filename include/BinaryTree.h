@@ -12,7 +12,8 @@ public:
     TreeNode *buildTree(std::vector<int>& preorder, std::vector<int>& inorder);
     // 从后序和中序构造二叉树
     TreeNode* buildTreePost(std::vector<int>& inorder, std::vector<int>& postorder);
-
+    // 根据完全二叉树数组创建二叉树
+    TreeNode *createTree(const std::vector<int> &nums, const int val);
 
     // 前序遍历：递归实现
     std::vector<int> preorderTraversalRecursion(TreeNode* root);
@@ -53,6 +54,18 @@ public:
 
     // 逆时针打印完全二叉树的边界节点
     std::vector<int> getSeq(int n, std::vector<int>& tree);
+
+    // 297. 二叉树的序列化与反序列化
+    // Encodes a tree to a single string.
+    std::string serialize(TreeNode* root);
+    // Decodes your encoded data to tree.
+    TreeNode* deserialize(std::string data);
+
+    // 236. 二叉树的最近公共祖先
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
+
+    // 剑指 Offer 28. 对称的二叉树
+    bool isSymmetric(TreeNode* root);
 };
 
 

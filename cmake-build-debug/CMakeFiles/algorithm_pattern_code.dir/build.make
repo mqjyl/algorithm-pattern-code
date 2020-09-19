@@ -59,223 +59,288 @@ include CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\main.cpp.obj -c D:\algorithm-pattern-code\main.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\main.cpp.obj -c D:\algorithm-pattern-code\main.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\main.cpp > CMakeFiles\algorithm_pattern_code.dir\main.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\main.cpp > CMakeFiles\algorithm_pattern_code.dir\main.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\main.cpp -o CMakeFiles\algorithm_pattern_code.dir\main.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\main.cpp -o CMakeFiles\algorithm_pattern_code.dir\main.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj: ../src/ListHandler.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\ListHandler.cpp.obj -c D:\algorithm-pattern-code\src\ListHandler.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\ListHandler.cpp.obj -c D:\algorithm-pattern-code\src\ListHandler.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\ListHandler.cpp > CMakeFiles\algorithm_pattern_code.dir\src\ListHandler.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\ListHandler.cpp > CMakeFiles\algorithm_pattern_code.dir\src\ListHandler.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/ListHandler.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\ListHandler.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\ListHandler.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\ListHandler.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\ListHandler.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/BinaryTree.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/BinaryTree.cpp.obj: ../src/BinaryTree.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/BinaryTree.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BinaryTree.cpp.obj -c D:\algorithm-pattern-code\src\BinaryTree.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BinaryTree.cpp.obj -c D:\algorithm-pattern-code\src\BinaryTree.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/BinaryTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/BinaryTree.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BinaryTree.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BinaryTree.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BinaryTree.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BinaryTree.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/BinaryTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/BinaryTree.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BinaryTree.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BinaryTree.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BinaryTree.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BinaryTree.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.obj: ../src/SortTool.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\SortTool.cpp.obj -c D:\algorithm-pattern-code\src\SortTool.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\SortTool.cpp.obj -c D:\algorithm-pattern-code\src\SortTool.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\SortTool.cpp > CMakeFiles\algorithm_pattern_code.dir\src\SortTool.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\SortTool.cpp > CMakeFiles\algorithm_pattern_code.dir\src\SortTool.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/SortTool.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\SortTool.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\SortTool.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\SortTool.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\SortTool.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.obj: ../src/BinarySearchTree.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BinarySearchTree.cpp.obj -c D:\algorithm-pattern-code\src\BinarySearchTree.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BinarySearchTree.cpp.obj -c D:\algorithm-pattern-code\src\BinarySearchTree.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BinarySearchTree.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BinarySearchTree.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BinarySearchTree.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BinarySearchTree.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/BinarySearchTree.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BinarySearchTree.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BinarySearchTree.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BinarySearchTree.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BinarySearchTree.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj: ../src/Recursive.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\Recursive.cpp.obj -c D:\algorithm-pattern-code\src\Recursive.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\Recursive.cpp.obj -c D:\algorithm-pattern-code\src\Recursive.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\Recursive.cpp > CMakeFiles\algorithm_pattern_code.dir\src\Recursive.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\Recursive.cpp > CMakeFiles\algorithm_pattern_code.dir\src\Recursive.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/Recursive.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\Recursive.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\Recursive.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\Recursive.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\Recursive.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/DivideConquer.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/DivideConquer.cpp.obj: ../src/DivideConquer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/DivideConquer.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\DivideConquer.cpp.obj -c D:\algorithm-pattern-code\src\DivideConquer.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\DivideConquer.cpp.obj -c D:\algorithm-pattern-code\src\DivideConquer.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/DivideConquer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/DivideConquer.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\DivideConquer.cpp > CMakeFiles\algorithm_pattern_code.dir\src\DivideConquer.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\DivideConquer.cpp > CMakeFiles\algorithm_pattern_code.dir\src\DivideConquer.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/DivideConquer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/DivideConquer.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\DivideConquer.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\DivideConquer.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\DivideConquer.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\DivideConquer.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/DynamicProgramming.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/DynamicProgramming.cpp.obj: ../src/DynamicProgramming.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/DynamicProgramming.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\DynamicProgramming.cpp.obj -c D:\algorithm-pattern-code\src\DynamicProgramming.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\DynamicProgramming.cpp.obj -c D:\algorithm-pattern-code\src\DynamicProgramming.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/DynamicProgramming.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/DynamicProgramming.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\DynamicProgramming.cpp > CMakeFiles\algorithm_pattern_code.dir\src\DynamicProgramming.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\DynamicProgramming.cpp > CMakeFiles\algorithm_pattern_code.dir\src\DynamicProgramming.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/DynamicProgramming.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/DynamicProgramming.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\DynamicProgramming.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\DynamicProgramming.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\DynamicProgramming.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\DynamicProgramming.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/BitOperations.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/BitOperations.cpp.obj: ../src/BitOperations.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/BitOperations.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BitOperations.cpp.obj -c D:\algorithm-pattern-code\src\BitOperations.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BitOperations.cpp.obj -c D:\algorithm-pattern-code\src\BitOperations.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/BitOperations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/BitOperations.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BitOperations.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BitOperations.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BitOperations.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BitOperations.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/BitOperations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/BitOperations.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BitOperations.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BitOperations.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BitOperations.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BitOperations.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.obj: ../src/HashTable.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\HashTable.cpp.obj -c D:\algorithm-pattern-code\src\HashTable.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\HashTable.cpp.obj -c D:\algorithm-pattern-code\src\HashTable.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\HashTable.cpp > CMakeFiles\algorithm_pattern_code.dir\src\HashTable.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\HashTable.cpp > CMakeFiles\algorithm_pattern_code.dir\src\HashTable.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/HashTable.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\HashTable.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\HashTable.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\HashTable.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\HashTable.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj: ../src/StringHandler.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\StringHandler.cpp.obj -c D:\algorithm-pattern-code\src\StringHandler.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\StringHandler.cpp.obj -c D:\algorithm-pattern-code\src\StringHandler.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\StringHandler.cpp > CMakeFiles\algorithm_pattern_code.dir\src\StringHandler.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\StringHandler.cpp > CMakeFiles\algorithm_pattern_code.dir\src\StringHandler.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\StringHandler.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\StringHandler.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\StringHandler.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\StringHandler.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.obj: ../src/SlidingWindow.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\SlidingWindow.cpp.obj -c D:\algorithm-pattern-code\src\SlidingWindow.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\SlidingWindow.cpp.obj -c D:\algorithm-pattern-code\src\SlidingWindow.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\SlidingWindow.cpp > CMakeFiles\algorithm_pattern_code.dir\src\SlidingWindow.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\SlidingWindow.cpp > CMakeFiles\algorithm_pattern_code.dir\src\SlidingWindow.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\SlidingWindow.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\SlidingWindow.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\SlidingWindow.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\SlidingWindow.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.obj: ../src/BackTracking.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BackTracking.cpp.obj -c D:\algorithm-pattern-code\src\BackTracking.cpp
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BackTracking.cpp.obj -c D:\algorithm-pattern-code\src\BackTracking.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BackTracking.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BackTracking.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BackTracking.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BackTracking.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BackTracking.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BackTracking.cpp.s
-
-CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
-CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj: ../src/OtherExecs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\OtherExecs.cpp.obj -c D:\algorithm-pattern-code\src\OtherExecs.cpp
-
-CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\OtherExecs.cpp > CMakeFiles\algorithm_pattern_code.dir\src\OtherExecs.cpp.i
-
-CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\OtherExecs.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\OtherExecs.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BackTracking.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BackTracking.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.obj: ../src/GraphHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\GraphHandler.cpp.obj -c D:\algorithm-pattern-code\src\GraphHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\GraphHandler.cpp.obj -c D:\algorithm-pattern-code\src\GraphHandler.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\GraphHandler.cpp > CMakeFiles\algorithm_pattern_code.dir\src\GraphHandler.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\GraphHandler.cpp > CMakeFiles\algorithm_pattern_code.dir\src\GraphHandler.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\GraphHandler.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\GraphHandler.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\GraphHandler.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\GraphHandler.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj: ../src/BFS_DFS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BFS_DFS.cpp.obj -c D:\algorithm-pattern-code\src\BFS_DFS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\BFS_DFS.cpp.obj -c D:\algorithm-pattern-code\src\BFS_DFS.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BFS_DFS.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BFS_DFS.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\BFS_DFS.cpp > CMakeFiles\algorithm_pattern_code.dir\src\BFS_DFS.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BFS_DFS.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BFS_DFS.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\BFS_DFS.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\BFS_DFS.cpp.s
 
 CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
 CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj: ../src/StackAndQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\StackAndQueue.cpp.obj -c D:\algorithm-pattern-code\src\StackAndQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\StackAndQueue.cpp.obj -c D:\algorithm-pattern-code\src\StackAndQueue.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\StackAndQueue.cpp > CMakeFiles\algorithm_pattern_code.dir\src\StackAndQueue.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\StackAndQueue.cpp > CMakeFiles\algorithm_pattern_code.dir\src\StackAndQueue.cpp.i
 
 CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\StackAndQueue.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\StackAndQueue.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\StackAndQueue.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\StackAndQueue.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj: ../src/Array_Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\Array_Matrix.cpp.obj -c D:\algorithm-pattern-code\src\Array_Matrix.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\Array_Matrix.cpp > CMakeFiles\algorithm_pattern_code.dir\src\Array_Matrix.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\Array_Matrix.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\Array_Matrix.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj: ../src/tools/CircularQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\tools\CircularQueue.cpp.obj -c D:\algorithm-pattern-code\src\tools\CircularQueue.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\tools\CircularQueue.cpp > CMakeFiles\algorithm_pattern_code.dir\src\tools\CircularQueue.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\tools\CircularQueue.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\tools\CircularQueue.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj: ../src/tools/BlockQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\tools\BlockQueue.cpp.obj -c D:\algorithm-pattern-code\src\tools\BlockQueue.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\tools\BlockQueue.cpp > CMakeFiles\algorithm_pattern_code.dir\src\tools\BlockQueue.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\tools\BlockQueue.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\tools\BlockQueue.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj: ../src/tools/WfirstRWLock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\tools\WfirstRWLock.cpp.obj -c D:\algorithm-pattern-code\src\tools\WfirstRWLock.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\tools\WfirstRWLock.cpp > CMakeFiles\algorithm_pattern_code.dir\src\tools\WfirstRWLock.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\tools\WfirstRWLock.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\tools\WfirstRWLock.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj: ../src/tools/AlternatePrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\tools\AlternatePrinter.cpp.obj -c D:\algorithm-pattern-code\src\tools\AlternatePrinter.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\tools\AlternatePrinter.cpp > CMakeFiles\algorithm_pattern_code.dir\src\tools\AlternatePrinter.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\tools\AlternatePrinter.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\tools\AlternatePrinter.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj: ../utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\utils.cpp.obj -c D:\algorithm-pattern-code\utils.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/utils.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\utils.cpp > CMakeFiles\algorithm_pattern_code.dir\utils.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/utils.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\utils.cpp -o CMakeFiles\algorithm_pattern_code.dir\utils.cpp.s
 
 # Object files for target algorithm_pattern_code
 algorithm_pattern_code_OBJECTS = \
@@ -292,10 +357,15 @@ algorithm_pattern_code_OBJECTS = \
 "CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj" \
 "CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.obj" \
 "CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.obj" \
-"CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj" \
 "CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.obj" \
 "CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj" \
-"CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj"
+"CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj"
 
 # External object files for target algorithm_pattern_code
 algorithm_pattern_code_EXTERNAL_OBJECTS =
@@ -313,15 +383,20 @@ algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/HashTable.
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/StringHandler.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/SlidingWindow.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/BackTracking.cpp.obj
-algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/OtherExecs.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/GraphHandler.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/BFS_DFS.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/StackAndQueue.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/build.make
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/linklibs.rsp
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/objects1.rsp
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable algorithm_pattern_code.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable algorithm_pattern_code.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\algorithm_pattern_code.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

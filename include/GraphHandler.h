@@ -16,8 +16,7 @@ struct Edge{
 
 class GraphHandler {
 public:
-    // 133. Clone Graph
-    Node* cloneGraph(Node* node);
+    /*  基本问题  */
     // 最短路径长度 Dijkstra
     void Dijkstra(int N, int S, std::vector<int>& dst, std::vector<std::vector<int>>& graph);
     // 记录最短路径
@@ -30,6 +29,10 @@ public:
 
     // 最小生成树 Kruscal
     int Kruscal(std::vector<int>& trees, std::vector<Edge>& graph);
+
+    /*  题型  */
+    // 133. Clone Graph
+    Node* cloneGraph(Node* node);
 };
 
 

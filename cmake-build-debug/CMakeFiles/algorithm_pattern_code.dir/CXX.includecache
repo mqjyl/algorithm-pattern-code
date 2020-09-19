@@ -6,27 +6,17 @@
 
 #IncludeRegexTransform: 
 
-D:/algorithm-pattern-code/include/BFS_DFS.h
-vector
--
-
-D:/algorithm-pattern-code/include/BackTracking.h
+D:/algorithm-pattern-code/include/Array_Matrix.h
 vector
 -
 string
 -
-
-D:/algorithm-pattern-code/include/BinarySearchTree.h
 
 D:/algorithm-pattern-code/include/BinaryTree.h
 vector
 -
 Nodes.h
 D:/algorithm-pattern-code/include/Nodes.h
-
-D:/algorithm-pattern-code/include/BitOperations.h
-vector
--
 
 D:/algorithm-pattern-code/include/DivideConquer.h
 vector
@@ -58,16 +48,6 @@ stdio.h
 vector
 -
 
-D:/algorithm-pattern-code/include/OtherExecs.h
-vector
--
-
-D:/algorithm-pattern-code/include/Recursive.h
-vector
--
-Nodes.h
-D:/algorithm-pattern-code/include/Nodes.h
-
 D:/algorithm-pattern-code/include/SlidingWindow.h
 vector
 -
@@ -90,10 +70,22 @@ string
 vector
 -
 
+D:/algorithm-pattern-code/include/tools/BlockQueue.h
+mutex
+-
+condition_variable
+-
+deque
+-
+chrono
+-
+
 D:/algorithm-pattern-code/main.cpp
 iostream
 -
 set
+-
+algorithm
 -
 include/ListHandler.h
 D:/algorithm-pattern-code/include/ListHandler.h
@@ -107,20 +99,24 @@ include/HashTable.h
 D:/algorithm-pattern-code/include/HashTable.h
 include/GraphHandler.h
 D:/algorithm-pattern-code/include/GraphHandler.h
+include/tools/BlockQueue.h
+D:/algorithm-pattern-code/include/tools/BlockQueue.h
+utils.h
+D:/algorithm-pattern-code/utils.h
 
-D:/algorithm-pattern-code/src/BFS_DFS.cpp
-../include/BFS_DFS.h
-D:/algorithm-pattern-code/include/BFS_DFS.h
-
-D:/algorithm-pattern-code/src/BackTracking.cpp
+D:/algorithm-pattern-code/src/Array_Matrix.cpp
+unordered_map
+-
 algorithm
 -
-../include/BackTracking.h
-D:/algorithm-pattern-code/include/BackTracking.h
-
-D:/algorithm-pattern-code/src/BinarySearchTree.cpp
-../include/BinarySearchTree.h
-D:/algorithm-pattern-code/include/BinarySearchTree.h
+iostream
+-
+climits
+-
+utility
+-
+../include/Array_Matrix.h
+D:/algorithm-pattern-code/include/Array_Matrix.h
 
 D:/algorithm-pattern-code/src/BinaryTree.cpp
 iostream
@@ -137,12 +133,6 @@ climits
 -
 ../include/BinaryTree.h
 D:/algorithm-pattern-code/include/BinaryTree.h
-
-D:/algorithm-pattern-code/src/BitOperations.cpp
-set
--
-../include/BitOperations.h
-D:/algorithm-pattern-code/include/BitOperations.h
 
 D:/algorithm-pattern-code/src/DivideConquer.cpp
 climits
@@ -192,20 +182,14 @@ map
 ../include/ListHandler.h
 D:/algorithm-pattern-code/include/ListHandler.h
 
-D:/algorithm-pattern-code/src/OtherExecs.cpp
-../include/OtherExecs.h
-D:/algorithm-pattern-code/include/OtherExecs.h
-
-D:/algorithm-pattern-code/src/Recursive.cpp
-../include/Recursive.h
-D:/algorithm-pattern-code/include/Recursive.h
-
 D:/algorithm-pattern-code/src/SlidingWindow.cpp
 unordered_map
 -
 climits
 -
 iostream
+-
+algorithm
 -
 ../include/SlidingWindow.h
 D:/algorithm-pattern-code/include/SlidingWindow.h
@@ -223,6 +207,20 @@ iostream
 D:/algorithm-pattern-code/include/StackAndQueue.h
 
 D:/algorithm-pattern-code/src/StringHandler.cpp
+climits
+-
 ../include/StringHandler.h
 D:/algorithm-pattern-code/include/StringHandler.h
+
+D:/algorithm-pattern-code/utils.cpp
+ctime
+-
+iostream
+-
+utils.h
+D:/algorithm-pattern-code/utils.h
+
+D:/algorithm-pattern-code/utils.h
+vector
+-
 

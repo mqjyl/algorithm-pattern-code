@@ -1,11 +1,16 @@
 #include <iostream>
 #include <set>
+#include <algorithm>
 #include "include/ListHandler.h"
 #include "include/BinaryTree.h"
 #include "include/SortTool.h"
 #include "include/SlidingWindow.h"
 #include "include/HashTable.h"
 #include "include/GraphHandler.h"
+#include "include/tools/BlockQueue.h"
+#include "utils.h"
+
+using namespace std;
 
 void printList(ListNode *head){
     std::cout << '[';
@@ -88,6 +93,24 @@ void testTree(){
     std::cout << "Is Balanced Tree:" << binaryTree->isBalanced(bTree) << std::endl;
 }
 
+void testBinTree(){
+    std::vector<int> gOrder = {3,9,20,15,7};
+    BinaryTree *binaryTree = new BinaryTree();
+
+    TreeNode *bTree = binaryTree->createTree(gOrder, -1);
+
+    string str =  binaryTree->serialize(bTree);
+    cout << str << endl;
+    TreeNode *rTree = binaryTree->deserialize(str);
+    std::vector<std::vector<int>> gResult = binaryTree->levelOrder(rTree);
+    for(int i = 0;i < gResult.size();i ++){
+        for(int j = 0;j < gResult[i].size();j ++) {
+            std::cout<< gResult[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+}
+
 void testSort(){
     std::vector<int> gPreorder = {3,9,20,15,7,10,3,44,8,34,35,445,2,45,6,5,4,43,87,98,7,6,677,655,3456,543,4,7,55,444,34,9,2,0,2,11,42};
     SortTool *sortTool = new SortTool();
@@ -126,12 +149,62 @@ void testDP(){
 
 }
 
+
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//int getCount(vector<vector<int>>& pairs) {
+//    if(pairs.empty())return 0;
+//    sort(pairs.begin(),pairs.end(),[](const vector<int>& a,const vector<int>& b){
+//        return (a[0]==b[0]&&a[1]<b[1])||(a[0]<b[0]);
+//    });
+//    int n=pairs.size(),res=0;
+//    vector<int> dp(n,1);
+//    for(int i=0;i<n;++i){
+//        for(int j=0;j<i;++j){
+//            if(pairs[j][1]<pairs[i][0]){
+//                dp[i]=max(dp[i],dp[j]+1);
+//            }
+//        }
+//        res=max(res,dp[i]);
+//    }
+//    return res;
+//}
+//
+//int main(){
+//    int n;
+//    cin >> n;
+//    vector<vector<int>> pairs;
+//    while(n--){
+//        int a, b;
+//        cin >> a >> b;
+//        pairs.push_back({a, b});
+//    }
+//    int count = getCount(pairs);
+//    cout << count << endl;
+//    return 0;
+//}
+
 int main() {
-    //testList();
-    //testTree();
-    testSort();
-    //testSlidingWindow();
-    //testHash();
-    //testGraph();
+//    testList();
+//    testTree();
+//    testSort();
+//    testSlidingWindow();
+//    testHash();
+//    testGraph();
+
+    testBlockQueue();
+
     return 0;
 }
+
+
+
+
+
+
+
+
