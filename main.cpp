@@ -8,6 +8,7 @@
 #include "include/HashTable.h"
 #include "include/GraphHandler.h"
 #include "include/tools/BlockQueue.h"
+#include "include/DynamicProgramming.h"
 #include "utils.h"
 
 using namespace std;
@@ -146,7 +147,19 @@ void testGraph(){
 }
 
 void testDP(){
-
+    int n;
+    cin >> n;
+    vector<int> nums(n + 1);
+    nums[0] = 0;
+    int i = 1;
+    while(i <= n){
+        cin >> nums[i];
+        i++;
+    }
+    DynamicProgramming dynamicProgramming;
+    pair<int, int> res = dynamicProgramming.mergeStones_ii(nums);
+    cout << res.first << endl;
+    cout << res.second << endl;
 }
 
 
@@ -196,11 +209,10 @@ int main() {
 //    testHash();
 //    testGraph();
 
-    testBlockQueue();
-
+    //testBlockQueue();
+    testDP();
     return 0;
 }
-
 
 
 

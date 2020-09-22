@@ -3,6 +3,7 @@
 //
 #include <algorithm>
 #include <climits>
+#include <cstring>
 #include "../include/DynamicProgramming.h"
 
 using namespace std;
@@ -309,16 +310,245 @@ long long DynamicProgramming::getSolutions(int n, int m, int k, int p) {
  * */
 /*  背包问题  */
 // 01背包
-int DynamicProgramming::maxValue(std::vector<int>& values, std::vector<int>& weight, int m){
-    int n = values.size();
-    int dp[n + 1][m + 1];
+//int DynamicProgramming::maxValue(std::vector<int>& values, std::vector<int>& weight, int n, int m){
+//    int dp[n + 1][m + 1];
+//    memset(dp, 0, sizeof(dp));
+//    for(int i = 1; i <= n; ++i){
+//        for(int j = 1; j <= m; ++j){
+//            if(weight[i] <= j)
+//                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + values[i]);
+//            else
+//                dp[i][j] = dp[i - 1][j];
+//        }
+//    }
+//    return dp[n][m];
+//}
+int DynamicProgramming::maxValue(std::vector<int>& values, std::vector<int>& weight, int n, int m){
+    int dp[m + 1];
+    memset(dp, 0, sizeof(dp));
     for(int i = 1; i <= n; ++i){
-        for(int j = 1; j <= m; ++j){
+        for(int j = m; j >= 1; --j){
             if(weight[i] <= j)
-                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + values[i]);
-            else
-                dp[i][j] = dp[i - 1][j];
+                dp[j] = max(dp[j], dp[j - weight[i]] + values[i]);
         }
     }
-    return dp[n][m];
+    return dp[m];
+}
+
+// 完全背包
+int DynamicProgramming::maxValue_i(std::vector<int>& values, std::vector<int>& weight, int n, int m){
+    int dp[m + 1];
+    memset(dp, 0, sizeof(dp));
+    for(int i = 1; i <= n; ++i){
+        for(int j = weight[i]; j <= m; ++j){
+            dp[j] = max(dp[j], dp[j - weight[i]] + values[i]);
+        }
+    }
+    return dp[m];
+}
+
+// 多重背包
+//int DynamicProgramming::maxValue_ii(std::vector<int>& values, std::vector<int>& weight, std::vector<int>& count, int n, int m){
+//    int dp[m + 1];
+//    memset(dp, 0, sizeof(dp));
+//    for(int i = 1; i <= n; ++i){
+//        for(int j = m; j >= weight[i]; --j){
+//            for(int k = 0; k <= count[i]; k++){
+//                if(j - k * weight[i] < 0)
+//                    break;
+//                dp[j] = max(dp[j], dp[j - k * weight[i]] + k * values[i]);
+//            }
+//        }
+//    }
+//    return dp[m];
+//}
+// 多重背包，二进制优化
+//int DynamicProgramming::maxValue_ii(std::vector<int>& values, std::vector<int>& weight, std::vector<int>& count, int n, int m){
+//    vector<pair<int, int> > lis;
+//    lis.push_back({0, 0});
+//    int idx, c;
+//    for(int i = 1; i <= n; ++i){
+//        c = 1;
+//        while(count[i] - c > 0){
+//            count[i] -= c;
+//            lis.push_back({c * values[i], c * weight[i]});
+//            c *= 2;
+//        }
+//        lis.push_back({count[i] * values[i], count[i] * weight[i]});
+//    }
+//    int dp[m + 1];
+//    memset(dp, 0, sizeof(dp));
+//    for(int i = 1; i <= lis.size(); ++i){
+//        for(int j = m; j >= lis[i].second; --j){
+//            dp[j] = max(dp[j], dp[j - lis[i].second] + lis[i].first);
+//        }
+//    }
+//    return dp[m];
+//}
+// duochong
+int DynamicProgramming::maxValue_ii(std::vector<int>& values, std::vector<int>& weight, std::vector<int>& count, int n, int m){
+    int dp[m + 1];
+    int q[m + 1];
+    int num[m + 1];
+    memset(dp, 0, sizeof(dp));
+    int l, r;
+    for(int i = 1; i <= n; ++i){
+        int c = min(count[i], m / weight[i]);
+        for(int b = 0; b < weight[i]; b++){
+            l = r = 1;
+            for(int t = 0; t <= (m - b) / weight[i]; t++){
+                int tmp = dp[t * weight[i] + b] - t * values[i];
+                while(l < r && q[r - 1] <= tmp)
+                    r--;
+                q[r] = tmp;
+                num[r++] = t;
+                // 滑动区间长度不大于c，因为dp[t * weight[i] + b] - t * values[i]既然存在，
+                // 那么再加c区间的t * values[i]的值肯定能取到
+                while(l < r && t - num[l] > c)
+                    l++;
+                // 因为dp中的是t * weight[i] + b,所以是q[l] + t * values[i]
+                dp[t * weight[i] + b] = max(dp[t * weight[i] + b], q[l] + t * values[i]);
+            }
+        }
+    }
+    return dp[m];
+}
+
+/**
+ * 石子堆问题
+ * */
+// 任意合并
+int DynamicProgramming::mergeStones(vector<int> &nums){
+    if(nums.empty())
+        return 0;
+    sort(nums.begin(), nums.end());
+    int idx = 0;
+    int res = 0;
+    while(idx < nums.size() - 1){
+        nums[idx] += nums[idx + 1];
+        res += nums[idx];
+        nums[idx + 1] = 0;
+        int tmp = nums[idx];
+        int i = idx + 1;
+        for(; i < nums.size() && nums[i] < tmp; ++i){
+            nums[i - 1] = nums[i];
+        }
+        nums[i - 1] = tmp;
+        while(nums[idx] == 0)
+            idx++;
+    }
+    return res;
+}
+// 相邻合并
+//int DynamicProgramming::mergeStones_i(std::vector<int> &nums){
+//    int len = nums.size();
+//    int sum[len + 1];
+//    sum[0] = 0;
+//    int dp[len + 1][len + 1];
+//    for(int i = 1; i <= len; ++i){
+//        sum[i] = sum[i - 1] + nums[i - 1];
+//        dp[i][i] = 0;
+//    }
+//    for(int v = 1; v < len; ++v){
+//        for(int i = 1; i <= len - v; ++i){
+//            int j = i + v;
+//            dp[i][j] = INT_MAX;
+//            for(int k = i; k < j; ++k){
+//                dp[i][j] = min(dp[i][j], dp[i][k] + dp[k + 1][j]);
+//            }
+//            dp[i][j] += sum[j] - sum[i - 1];
+//        }
+//    }
+//    return dp[1][len];
+//}
+// 相邻合并——平行四边形优化
+//int DynamicProgramming::mergeStones_i(std::vector<int> &nums){
+//    int len = nums.size();
+//    int sum[len + 1];
+//    sum[0] = 0;
+//    int dp[len + 1][len + 1];
+//    int s[len + 1][len + 1];
+//    for(int i = 1; i <= len; ++i){
+//        sum[i] = sum[i - 1] + nums[i - 1];
+//        dp[i][i] = 0;
+//        s[i][i] = i;
+//    }
+//    for(int v = 1; v < len; ++v){ // v 控制离中心线距离
+//        for(int i = 1; i <= len - v; ++i){ // i 控制行
+//            int j = i + v;  // j 控制列
+//            dp[i][j] = INT_MAX;
+//            for(int k = s[i][j - 1]; k <= s[i + 1][j]; ++k){
+//                if(dp[i][j] > dp[i][k] + dp[k + 1][j]) {
+//                    dp[i][j] = dp[i][k] + dp[k + 1][j];
+//                    s[i][j] = k;
+//                }
+//            }
+//            dp[i][j] += sum[j] - sum[i - 1];
+//        }
+//    }
+//    return dp[1][len];
+//}
+// 相邻合并——GarsiaWachs算法
+int DynamicProgramming::mergeStones_i(std::vector<int> &nums){
+    int ans = 0;
+    int len = nums.size();
+    int cnt = len - 3;
+    while(cnt--){
+        int tmp = 0;
+        int i = 2;
+        for(; i < len - 1; ++i){
+            if(nums[i - 1] <= nums[i + 1]){
+                tmp = nums[i - 1] + nums[i];
+                ans += tmp;
+                break;
+            }
+        }
+        int j = i - 1;
+        // 将 tmp 插入到合适的位置
+        for(; nums[j - 1 ] < tmp; j--)
+            nums[j] = nums[j - 1];
+        nums[j] = tmp;
+        // 删除第 i 个元素
+        nums.erase(nums.begin() + i);
+//        for(j = i; j < len - 1 ; j++)
+//            nums[j] = nums[j + 1];
+        len--;
+    }
+    return ans;
+}
+// 环形合并
+int sum(std::vector<int> &nums, int i, int j){
+    int ans = 0;
+    for(; j > 0; j--, i++){
+        if(i > nums.size() - 1)
+            i %= (nums.size() - 1);
+        ans += nums[i];
+    }
+    return ans;
+}
+pair<int, int> DynamicProgramming::mergeStones_ii(std::vector<int> &nums){
+    int len = nums.size();
+    int dp_min[len][len];
+    int dp_max[len][len];
+    for(int i = 1; i < len; i++){
+        dp_min[i][1] = 0; // 没有合并则花费为0
+        dp_max[i][1] = 0;
+    }
+    for(int j = 2; j < len; ++j){
+        for(int i = 1; i < len; ++i){
+            dp_min[i][j] = INT_MAX;
+            dp_max[i][j] = INT_MIN;
+            for(int k = 1; k < j; k++){
+                dp_min[i][j] = min(dp_min[i][j], dp_min[i][k] + dp_min[(i + k - 1) % (len - 1) + 1][j - k] + sum(nums, i, j));
+                dp_max[i][j] = max(dp_max[i][j], dp_max[i][k] + dp_max[(i + k - 1) % (len - 1) + 1][j - k] + sum(nums, i, j));
+            }
+        }
+    }
+    int mini = INT_MAX;
+    int maxi = INT_MIN;
+    for(int i = 1; i < len; i++){//从第几堆石子开始结果最小
+        mini = min(mini, dp_min[i][len - 1]);
+        maxi = max(maxi, dp_max[i][len - 1]);
+    }
+    return make_pair(mini, maxi);
 }

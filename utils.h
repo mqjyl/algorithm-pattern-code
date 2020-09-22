@@ -6,13 +6,10 @@
 #define ALGORITHM_PATTERN_CODE_UTILS_H
 
 #include <vector>
-
+/*  洗牌算法  */
 void Fisher_Yates_Shuffle(std::vector<int>& arr, std::vector<int>& res);
-
 void Knuth_Durstenfeld_Shuffle(std::vector<int> &arr);
-
 void Inside_Out_Shuffle(const std::vector<int>& arr, std::vector<int>& res);
-
 void testDealCards();
 
 #endif //ALGORITHM_PATTERN_CODE_UTILS_H

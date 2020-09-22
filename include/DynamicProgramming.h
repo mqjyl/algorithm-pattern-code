@@ -5,6 +5,7 @@
 #ifndef ALGORITHM_PATTERN_DYNAMICPROGRAMMING_H
 #define ALGORITHM_PATTERN_DYNAMICPROGRAMMING_H
 #include <vector>
+#include <utility>
 
 const int prime = 1e9 + 7;
 
@@ -68,7 +69,19 @@ public:
 
     /*  背包问题  */
     // 01背包
-    int maxValue(std::vector<int>& values, std::vector<int>& weight, int m);
+    int maxValue(std::vector<int>& values, std::vector<int>& weight, int n, int m);
+    // 完全背包
+    int maxValue_i(std::vector<int>& values, std::vector<int>& weight, int n, int m);
+    // 多重背包
+    int maxValue_ii(std::vector<int>& values, std::vector<int>& weight, std::vector<int>& count, int n, int m);
+
+    /*  石子堆问题  */
+    // 任意合并
+    int mergeStones(std::vector<int> &nums);
+    // 相邻合并
+    int mergeStones_i(std::vector<int> &nums);
+    // 环形合并
+    std::pair<int, int> mergeStones_ii(std::vector<int> &nums);
 };
 
 

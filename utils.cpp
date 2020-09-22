@@ -6,7 +6,9 @@
 #include "utils.h"
 
 using namespace std;
-
+/**
+ * 洗牌算法
+ * */
 void Fisher_Yates_Shuffle(vector<int>& arr,vector<int>& res)
 {
     int len = arr.size();
@@ -18,7 +20,6 @@ void Fisher_Yates_Shuffle(vector<int>& arr,vector<int>& res)
         arr.erase(arr.begin() + k);
     }
 }
-
 void Knuth_Durstenfeld_Shuffle(vector<int> &arr)
 {
     int len = arr.size();
@@ -29,7 +30,6 @@ void Knuth_Durstenfeld_Shuffle(vector<int> &arr)
         swap(arr[k], arr[i]);
     }
 }
-
 void Inside_Out_Shuffle(const vector<int>& arr, vector<int>& res)
 {
     res.assign(arr.size(), 0);
@@ -41,14 +41,13 @@ void Inside_Out_Shuffle(const vector<int>& arr, vector<int>& res)
         swap(res[k], res[i]);
     }
 }
-
-void testDealCards(){
+void testDealCards()
+{
     vector<int> arr(54);
     for(int i = 0; i < 54; ++i)
         arr[i] = i + 1;
     vector<int> res;
     // Fisher_Yates_Shuffle(arr, res);
-
     // Knuth_Durstenfeld_Shuffle(arr);
     Inside_Out_Shuffle(arr, res);
     for(int a : res)

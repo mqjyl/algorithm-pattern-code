@@ -3,6 +3,7 @@
 
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj
  D:/algorithm-pattern-code/include/BinaryTree.h
+ D:/algorithm-pattern-code/include/DynamicProgramming.h
  D:/algorithm-pattern-code/include/GraphHandler.h
  D:/algorithm-pattern-code/include/HashTable.h
  D:/algorithm-pattern-code/include/ListHandler.h
