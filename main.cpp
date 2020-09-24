@@ -9,6 +9,7 @@
 #include "include/GraphHandler.h"
 #include "include/tools/BlockQueue.h"
 #include "include/DynamicProgramming.h"
+#include "include/Array_Matrix.h"
 #include "utils.h"
 
 using namespace std;
@@ -162,6 +163,31 @@ void testDP(){
     cout << res.second << endl;
 }
 
+void testArray(){
+    vector<int> a = {3, 5, 14, 5, 7, 9, 20, 16, 17, 11, 4, 13, 8, 15};
+    vector<int> b = {2, 9, 12, 8, 4, 7, 19, 14, 15, 13, 6, 12, 4, 11};
+//    vector<int> a = {5, 5, 9, 10};
+//    vector<int> b = {4, 7, 7, 13};
+    Array_Matrix arrayMatrix;
+    int sum = 0;
+    for(int i : a)
+        sum += i;
+    cout << sum << endl;
+    sum = 0;
+    for(int i : b)
+        sum += i;
+    cout << sum << endl;
+    cout << arrayMatrix.minDiff(a, b) << endl;
+    sum = 0;
+    for(int i : a)
+        sum += i;
+    cout << sum << endl;
+    sum = 0;
+    for(int i : b)
+        sum += i;
+    cout << sum << endl;
+}
+
 
 //#include <iostream>
 //#include <vector>
@@ -210,7 +236,8 @@ int main() {
 //    testGraph();
 
     //testBlockQueue();
-    testDP();
+    //testDP();
+    testArray();
     return 0;
 }
 

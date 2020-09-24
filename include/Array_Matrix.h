@@ -20,6 +20,8 @@ public:
     int findMin(std::vector<std::vector<int> > &arr);
     // 多个整数拼接成最大整数
     std::string getMaxNum(std::vector<int> &nums);
+    // 数组和差值最小
+    int minDiff(std::vector<int> &a, std::vector<int> &b);
 
 
     /*  矩阵  */

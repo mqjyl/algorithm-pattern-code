@@ -6,19 +6,23 @@
 
 #IncludeRegexTransform: 
 
-D:/algorithm-pattern-code/include/DynamicProgramming.h
+D:/algorithm-pattern-code/include/Array_Matrix.h
 vector
 -
-utility
+string
 -
 
-D:/algorithm-pattern-code/src/DynamicProgramming.cpp
+D:/algorithm-pattern-code/src/Array_Matrix.cpp
+unordered_map
+-
 algorithm
+-
+iostream
 -
 climits
 -
-cstring
+utility
 -
-../include/DynamicProgramming.h
-D:/algorithm-pattern-code/include/DynamicProgramming.h
+../include/Array_Matrix.h
+D:/algorithm-pattern-code/include/Array_Matrix.h
 

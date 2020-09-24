@@ -30,11 +30,14 @@ public:
     // 最小生成树 Kruscal
     int Kruscal(std::vector<int>& trees, std::vector<Edge>& graph);
 
+    // 拓扑排序 边以pair的形式给出
+    std::vector<int> topologicalSort_bfs(int n, std::vector<std::pair<int, int> >& edges);
+    std::vector<int> topologicalSort_dfs(int n, std::vector<std::pair<int, int> >& edges);
+
     /*  题型  */
     // 133. Clone Graph
     Node* cloneGraph(Node* node);
 };
-
 
 void testDijkstra();
 

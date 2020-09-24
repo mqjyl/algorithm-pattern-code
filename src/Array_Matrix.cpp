@@ -123,6 +123,41 @@ string Array_Matrix::getMaxNum(vector<int> &nums){
     return res;
 }
 
+// 数组和差值最小
+int Array_Matrix::minDiff(std::vector<int> &a, std::vector<int> &b){
+    int diff = 0;
+    for(int i = 0; i < a.size(); ++i){
+        diff += (a[i] - b[i]);
+    }
+    bool flag = true;
+    if(diff == 0)
+        return 0;
+    vector<pair<int, int> > pairs;
+    while(flag){
+        flag = false;
+        for(int i = 0; i < a.size(); ++i){
+            for(int j = 0; j < b.size(); ++j){
+                if((a[i] != b[j]) && (abs(diff - 2 * (a[i] - b[j])) <= abs(diff))){
+                    bool sign = true;
+                    for(auto p : pairs){
+                        if(p.first == i && p.second == j){
+                            sign = false;
+                            break;
+                        }
+                    }
+                    if(sign){
+                        diff = diff - 2 * (a[i] - b[j]);
+                        swap(a[i], b[j]);
+                        pairs.push_back(make_pair(i, j));
+                        flag = true;
+                    }
+                }
+            }
+        }
+    }
+    return diff;
+}
+
 /**
  * 矩阵
  * */

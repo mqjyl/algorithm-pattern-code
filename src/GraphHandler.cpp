@@ -6,6 +6,9 @@
 #include <algorithm>
 #include <functional>
 #include <memory>
+#include <cstring>
+#include <queue>
+#include <stack>
 #include "../include/GraphHandler.h"
 
 using namespace std;
@@ -15,7 +18,9 @@ using namespace std;
  * */
 const int MAX_LEN = 100001;
 
-// 最短路径长度 Dijkstra
+/**
+ * 最短路径长度 Dijkstra
+ * */
 void GraphHandler::Dijkstra(int N, int S, vector<int>& dst, vector<vector<int>>& graph){
     vector<bool> book(N + 1, false);
     book[S] = true;
@@ -122,7 +127,9 @@ void testDijkstra(){
     }
 }
 
-// 最小生成树 Prim
+/**
+ * 最小生成树 Prim
+ * */
 int GraphHandler::Prim(int N, std::vector<int>& dst, std::vector<std::vector<int>>& graph){
     vector<bool> visited(N + 1, false);
     visited[1] = true;
@@ -150,7 +157,6 @@ int GraphHandler::Prim(int N, std::vector<int>& dst, std::vector<std::vector<int
     }
     return result;
 }
-
 // 最小生成树 Prim 记录路径
 int GraphHandler::Prim(int N, std::vector<int>& dst, std::vector<int>& pre, std::vector<std::vector<int>>& graph){
     vector<bool> visited(N + 1, false);
@@ -205,6 +211,9 @@ void testPrim(){
     }
 }
 
+/**
+ * 最小生成树 Kruscal
+ * */
 //int Find(std::vector<int>& pre, int x){
 //    return x == pre[x] ? x : pre[x] = Find(pre, pre[x]);
 //}
@@ -213,7 +222,17 @@ void testPrim(){
 //    pre[Find(pre, x)] = Find(pre, y);
 //}
 
-// 最小生成树 Kruscal
+//int GraphHandler::Kruscal(std::vector<int>& trees, std::vector<Edge>& graph){
+//    int result = 0;
+//    for(auto edge : graph){
+//        if(Find(trees, edge.st) != Find(trees, edge.ed)){
+//            result += edge.cost;
+//            Union(trees, edge.st, edge.ed);
+//        }
+//    }
+//    return result;
+//}
+
 int GraphHandler::Kruscal(std::vector<int>& trees, std::vector<Edge>& graph){
     int result = 0;
     // C++ 14
@@ -239,17 +258,6 @@ int GraphHandler::Kruscal(std::vector<int>& trees, std::vector<Edge>& graph){
     return result;
 }
 
-//int GraphHandler::Kruscal(std::vector<int>& trees, std::vector<Edge>& graph){
-//    int result = 0;
-//    for(auto edge : graph){
-//        if(Find(trees, edge.st) != Find(trees, edge.ed)){
-//            result += edge.cost;
-//            Union(trees, edge.st, edge.ed);
-//        }
-//    }
-//    return result;
-//}
-
 void testKruscal(){
     int N = 0, M = 0;
     int N1, N2, V;
@@ -269,6 +277,78 @@ void testKruscal(){
         GraphHandler graphHandler;
         cout << graphHandler.Kruscal(root, graph) << endl;
     }
+}
+
+/**
+ * 拓扑排序 边以pair的形式给出
+ * */
+// BFS
+std::vector<int> GraphHandler::topologicalSort_bfs(int n, std::vector<std::pair<int, int> >& edges){
+    vector<int> res;
+    queue<int> iqueue;
+    int in_degree[n];
+    memset(in_degree, 0, sizeof in_degree);
+    for(auto edge : edges){
+        in_degree[edge.second]++;
+    }
+    for(int i = 0; i < n; ++i){
+        if(in_degree[i] == 0)
+            iqueue.push(i);
+    }
+    while(!iqueue.empty()){
+        int tmp = iqueue.front();
+        iqueue.pop();
+        res.push_back(tmp);
+        for(int i = 0; i < edges.size(); ++i){
+            if(edges[i].first == tmp){
+                in_degree[edges[i].second]--;
+                if(in_degree[edges[i].second] == 0)
+                    iqueue.push(edges[i].second);
+            }
+        }
+    }
+    return res.size() == n ? res : vector<int>();
+}
+// DFS
+void dfs(vector<vector<int> >&v, stack<int> &s, int *isVisited, int u, bool &isCircled){
+    if(isCircled)
+        return;
+    isVisited[u] = -1;
+    for(int i = 0; i < v[u].size(); ++i){
+        if (isVisited[v[u][i]] == 0) {
+            dfs(v, s, isVisited, v[u][i], isCircled);
+        }else if(isVisited[v[u][i]] == -1){
+            isCircled = true;
+            return;
+        }
+    }
+    isVisited[u] = 1;
+    s.push(u);
+}
+std::vector<int> GraphHandler::topologicalSort_dfs(int n, std::vector<std::pair<int, int> >& edges){
+    vector<int> res;
+    stack<int> istack;
+    int isVisited[n]; // 0为未访问，1为已访问，-1为正在访问，当dfs搜索时遇到了
+                      // 一条边终止顶点对应的isVisited元素为-1时，就说明图中有环了
+    memset(isVisited, 0, sizeof isVisited);
+    vector<vector<int> > v_edges(n);
+    for(auto edge : edges) {
+        v_edges[edge.second].push_back(edge.first);
+    }
+    bool isCircled = false;
+    for(int i = 0; i < n; ++i){
+        if(!isVisited[i])
+            dfs(v_edges, istack, isVisited, i, isCircled);
+        if(isCircled)
+            break;
+    }
+    if (isCircled)
+        return vector<int>();
+    while(!istack.empty()){
+        res.push_back(istack.top());
+        istack.pop();
+    }
+    return res;
 }
 
 /**
