@@ -21,6 +21,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj"
   "CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj"
   "CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj"
+  "CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj"
   "algorithm_pattern_code.pdb"
   "algorithm_pattern_code.exe"
   "algorithm_pattern_code.exe.manifest"

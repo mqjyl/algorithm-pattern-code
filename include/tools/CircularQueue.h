@@ -22,8 +22,8 @@ public:
     T front();
     int size();
 
-public:
-    bool resize();
+private:
+    void resize();
 
 private:
     T *m_data;

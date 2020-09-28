@@ -4,7 +4,10 @@
 
 #include "../../include/tools/CircularQueue.h"
 #include <new>
+#include <iostream>
+#include <vector>
 
+using namespace std;
 template <class T>
 CircularQueue<T>::CircularQueue(){
     m_front = 0;
@@ -57,8 +60,9 @@ void CircularQueue<T>::pop(){
 template <class T>
 T CircularQueue<T>::front(){
     if(!empty()){
-        return m_data[front()];
+        return m_data[m_front];
     }
+    return T();
 }
 
 template <class T>
@@ -67,19 +71,38 @@ int CircularQueue<T>::size(){
 }
 
 template <class T>
-bool CircularQueue<T>::resize(){
-    T *tmp = new T[m_length * 1.5];
+void CircularQueue<T>::resize(){
+    int len = int(m_length * 1.5);
+    T *tmp = new T[len];
     int count = 0;
-    for(int i = m_front; i < m_rear; i = (i + 1) % m_length){
+    for(int i = m_front; i != m_rear; i = (i + 1) % m_length){
         tmp[count++] = m_data[i];
     }
     m_front = 0;
     m_rear = count;
-    m_length *= 1.5;
+    m_length = len;
     delete[] m_data;
     m_data = tmp;
 }
 
 void testCircularQueue(){
-
+    CircularQueue<int> CIR(4);
+    CIR.push(10);
+    CIR.push(11);
+    CIR.push(12);
+    cout << CIR.size() << endl;
+    CIR.push(17);
+    cout << CIR.front() << endl;
+    CIR.pop();
+    CIR.push(17);
+    CIR.push(9);
+    CIR.push(1);
+    cout << CIR.front() << endl;
+    cout << CIR.size() << endl;
+    CIR.pop();
+    CIR.pop();
+    CIR.pop();
+    cout << CIR.front() << endl;
+    cout << CIR.size() << endl;
+    CIR.push(6);
 }

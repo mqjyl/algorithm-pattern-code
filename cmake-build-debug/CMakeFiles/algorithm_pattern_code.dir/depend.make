@@ -10,7 +10,10 @@ CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/ListHandler.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/Nodes.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/SlidingWindow.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/SortTool.h
+CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/tools/AlternatePrinter.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/tools/BlockQueue.h
+CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/tools/CircularQueue.h
+CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../include/tools/ThreadPool.h
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj: ../utils.h
 
@@ -74,6 +77,9 @@ CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj: ../src/tools
 
 CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj: ../include/tools/CircularQueue.h
 CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj: ../src/tools/CircularQueue.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj: ../include/tools/ThreadPool.h
+CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj: ../src/tools/ThreadPool.cpp
 
 CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj: ../include/tools/WfirstRWLock.h
 CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj: ../src/tools/WfirstRWLock.cpp

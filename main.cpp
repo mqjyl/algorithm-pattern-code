@@ -1,6 +1,7 @@
 #include <iostream>
 #include <set>
 #include <algorithm>
+#include <stack>
 #include "include/ListHandler.h"
 #include "include/BinaryTree.h"
 #include "include/SortTool.h"
@@ -10,6 +11,9 @@
 #include "include/tools/BlockQueue.h"
 #include "include/DynamicProgramming.h"
 #include "include/Array_Matrix.h"
+#include "include/tools/CircularQueue.h"
+#include "include/tools/AlternatePrinter.h"
+#include "include/tools/ThreadPool.h"
 #include "utils.h"
 
 using namespace std;
@@ -234,16 +238,13 @@ int main() {
 //    testSlidingWindow();
 //    testHash();
 //    testGraph();
-
     //testBlockQueue();
     //testDP();
-    testArray();
+    //testArray();
+    //testCircularQueue();
+    //testAlternatePrinter();
+    testThreadPool();
     return 0;
 }
-
-
-
-
-
 
 

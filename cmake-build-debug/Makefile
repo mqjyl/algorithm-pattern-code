@@ -662,6 +662,33 @@ src/tools/CircularQueue.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.s
 .PHONY : src/tools/CircularQueue.cpp.s
 
+src/tools/ThreadPool.obj: src/tools/ThreadPool.cpp.obj
+
+.PHONY : src/tools/ThreadPool.obj
+
+# target to build an object file
+src/tools/ThreadPool.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj
+.PHONY : src/tools/ThreadPool.cpp.obj
+
+src/tools/ThreadPool.i: src/tools/ThreadPool.cpp.i
+
+.PHONY : src/tools/ThreadPool.i
+
+# target to preprocess a source file
+src/tools/ThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.i
+.PHONY : src/tools/ThreadPool.cpp.i
+
+src/tools/ThreadPool.s: src/tools/ThreadPool.cpp.s
+
+.PHONY : src/tools/ThreadPool.s
+
+# target to generate assembly for a file
+src/tools/ThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.s
+.PHONY : src/tools/ThreadPool.cpp.s
+
 src/tools/WfirstRWLock.obj: src/tools/WfirstRWLock.cpp.obj
 
 .PHONY : src/tools/WfirstRWLock.obj
@@ -785,6 +812,9 @@ help:
 	@echo ... src/tools/CircularQueue.obj
 	@echo ... src/tools/CircularQueue.i
 	@echo ... src/tools/CircularQueue.s
+	@echo ... src/tools/ThreadPool.obj
+	@echo ... src/tools/ThreadPool.i
+	@echo ... src/tools/ThreadPool.s
 	@echo ... src/tools/WfirstRWLock.obj
 	@echo ... src/tools/WfirstRWLock.i
 	@echo ... src/tools/WfirstRWLock.s

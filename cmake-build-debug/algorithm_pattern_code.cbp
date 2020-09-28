@@ -140,6 +140,9 @@
 		<Unit filename="D:/algorithm-pattern-code/include/tools/CircularQueue.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/include/tools/ThreadPool.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/include/tools/WfirstRWLock.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
@@ -201,6 +204,9 @@
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/src/tools/CircularQueue.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/tools/ThreadPool.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/src/tools/WfirstRWLock.cpp">
