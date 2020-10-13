@@ -140,6 +140,18 @@
 		<Unit filename="D:/algorithm-pattern-code/include/tools/CircularQueue.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/include/tools/RWLockAtomic.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/include/tools/RWLockAtomic.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/include/tools/SharedPointer.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/include/tools/TString.h">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/include/tools/ThreadPool.h">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
@@ -204,6 +216,12 @@
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/src/tools/CircularQueue.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/tools/SharedPointer.cpp">
+			<Option target="algorithm_pattern_code"/>
+		</Unit>
+		<Unit filename="D:/algorithm-pattern-code/src/tools/TString.cpp">
 			<Option target="algorithm_pattern_code"/>
 		</Unit>
 		<Unit filename="D:/algorithm-pattern-code/src/tools/ThreadPool.cpp">

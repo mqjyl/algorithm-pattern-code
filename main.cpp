@@ -14,6 +14,8 @@
 #include "include/tools/CircularQueue.h"
 #include "include/tools/AlternatePrinter.h"
 #include "include/tools/ThreadPool.h"
+#include "include/tools/WfirstRWLock.h"
+#include "include/tools/SharedPointer.h"
 #include "utils.h"
 
 using namespace std;
@@ -243,7 +245,10 @@ int main() {
     //testArray();
     //testCircularQueue();
     //testAlternatePrinter();
-    testThreadPool();
+    //testThreadPool();
+    //testRWLock();
+    testSharedPointer();
+    
     return 0;
 }
 

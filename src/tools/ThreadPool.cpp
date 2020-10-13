@@ -8,10 +8,12 @@
 #include <windows.h>
 
 void ThreadPool::threadCallback(){
-    while(1){
+    while(true){
         // 没有任务则等待
         unique_lock<mutex> lock(mtx);
-        cond.wait(lock, [this](){return !tasks.empty();});
+        cond.wait(lock, [this](){return terminate || !tasks.empty();});
+        if(terminate)
+            break;
         Task *task = tasks.top();
         if(task != nullptr){
             tasks.pop();
@@ -24,15 +26,13 @@ void ThreadPool::threadCallback(){
 int ThreadPool::addOneTask(Task *task){
     unique_lock<mutex> lock(mtx);
     tasks.push(task);
-    cond.notify_all();
+    cond.notify_one();
     return 0;
 }
 int ThreadPool::threadCreate(int numWorkers){
-    if(numWorkers <= 0)
-        numWorkers = 1;
     for(int i = 0; i < numWorkers; i++){
         thread *worker = new thread(std::bind(&ThreadPool::threadCallback, this));
-        if(worker != nullptr){
+        if(worker == nullptr){
             cout << "new thread error" << endl;
             return -1;
         }
@@ -42,11 +42,13 @@ int ThreadPool::threadCreate(int numWorkers){
 }
 int ThreadPool::threadDestory(){
     std::unique_lock<std::mutex> lock(mtx);
+    terminate = true;
+    lock.unlock();
     cond.notify_all();
-    for (vector<thread *>::iterator it = workers.begin(); it != workers.end() ; ++it)
+    for (thread *& worker : workers)
     {
-        (*it)->join();
-        delete *it;
+        worker->join();
+        delete worker;
     }
     workers.clear();
     return 0;

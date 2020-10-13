@@ -10,7 +10,6 @@
 #include <queue>
 #include <functional>
 #include <list>
-
 using namespace std;
 
 struct Task{
@@ -23,9 +22,14 @@ struct Task{
 class ThreadPool {
 public:
     ThreadPool(int numWorkers, int maxNum = 20) : max_count(maxNum) {
+        if(maxNum <= 0)
+            maxNum = 20;
         if(numWorkers > maxNum)
             numWorkers = maxNum;
+        if(numWorkers <= 0)
+            numWorkers = 1;
         num_workers = numWorkers;
+        terminate = false;
         int res = threadCreate(num_workers);
     }
     ~ThreadPool(){
@@ -50,6 +54,8 @@ private:
 
     int num_workers;
     const int max_count;
+
+    bool terminate;
 };
 
 int testThreadPool();

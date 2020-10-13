@@ -14,7 +14,9 @@ CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj
  D:/algorithm-pattern-code/include/tools/AlternatePrinter.h
  D:/algorithm-pattern-code/include/tools/BlockQueue.h
  D:/algorithm-pattern-code/include/tools/CircularQueue.h
+ D:/algorithm-pattern-code/include/tools/SharedPointer.h
  D:/algorithm-pattern-code/include/tools/ThreadPool.h
+ D:/algorithm-pattern-code/include/tools/WfirstRWLock.h
  D:/algorithm-pattern-code/main.cpp
  D:/algorithm-pattern-code/utils.h
 CMakeFiles/algorithm_pattern_code.dir/src/Array_Matrix.cpp.obj
@@ -78,6 +80,12 @@ CMakeFiles/algorithm_pattern_code.dir/src/tools/BlockQueue.cpp.obj
 CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.obj
  D:/algorithm-pattern-code/include/tools/CircularQueue.h
  D:/algorithm-pattern-code/src/tools/CircularQueue.cpp
+CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.obj
+ D:/algorithm-pattern-code/include/tools/SharedPointer.h
+ D:/algorithm-pattern-code/src/tools/SharedPointer.cpp
+CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.obj
+ D:/algorithm-pattern-code/include/tools/TString.h
+ D:/algorithm-pattern-code/src/tools/TString.cpp
 CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj
  D:/algorithm-pattern-code/include/tools/ThreadPool.h
  D:/algorithm-pattern-code/src/tools/ThreadPool.cpp

@@ -355,6 +355,45 @@ CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\tools\ThreadPool.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\tools\ThreadPool.cpp.s
 
+CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.obj: ../src/tools/TString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\tools\TString.cpp.obj -c D:\algorithm-pattern-code\src\tools\TString.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\tools\TString.cpp > CMakeFiles\algorithm_pattern_code.dir\src\tools\TString.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\tools\TString.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\tools\TString.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.obj: ../src/tools/SharedPointer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\src\tools\SharedPointer.cpp.obj -c D:\algorithm-pattern-code\src\tools\SharedPointer.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\src\tools\SharedPointer.cpp > CMakeFiles\algorithm_pattern_code.dir\src\tools\SharedPointer.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\src\tools\SharedPointer.cpp -o CMakeFiles\algorithm_pattern_code.dir\src\tools\SharedPointer.cpp.s
+
+CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.obj: CMakeFiles/algorithm_pattern_code.dir/flags.make
+CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.obj: ../include/tools/RWLockAtomic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_pattern_code.dir\include\tools\RWLockAtomic.cpp.obj -c D:\algorithm-pattern-code\include\tools\RWLockAtomic.cpp
+
+CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\algorithm-pattern-code\include\tools\RWLockAtomic.cpp > CMakeFiles\algorithm_pattern_code.dir\include\tools\RWLockAtomic.cpp.i
+
+CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\algorithm-pattern-code\include\tools\RWLockAtomic.cpp -o CMakeFiles\algorithm_pattern_code.dir\include\tools\RWLockAtomic.cpp.s
+
 # Object files for target algorithm_pattern_code
 algorithm_pattern_code_OBJECTS = \
 "CMakeFiles/algorithm_pattern_code.dir/main.cpp.obj" \
@@ -379,7 +418,10 @@ algorithm_pattern_code_OBJECTS = \
 "CMakeFiles/algorithm_pattern_code.dir/src/tools/WfirstRWLock.cpp.obj" \
 "CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj" \
 "CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj" \
-"CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj"
+"CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.obj" \
+"CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.obj"
 
 # External object files for target algorithm_pattern_code
 algorithm_pattern_code_EXTERNAL_OBJECTS =
@@ -407,11 +449,14 @@ algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/Wfir
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/AlternatePrinter.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/utils.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/ThreadPool.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.obj
+algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.obj
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/build.make
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/linklibs.rsp
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/objects1.rsp
 algorithm_pattern_code.exe: CMakeFiles/algorithm_pattern_code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable algorithm_pattern_code.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\algorithm-pattern-code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable algorithm_pattern_code.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\algorithm_pattern_code.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,27 +6,17 @@
 
 #IncludeRegexTransform: 
 
-D:/algorithm-pattern-code/include/tools/ThreadPool.h
-mutex
+D:/algorithm-pattern-code/include/tools/SharedPointer.h
+cstdio
 -
-condition_variable
+cstdlib
 -
-thread
--
-queue
--
-functional
--
-list
+cassert
 -
 
-D:/algorithm-pattern-code/src/tools/ThreadPool.cpp
-../../include/tools/ThreadPool.h
-D:/algorithm-pattern-code/include/tools/ThreadPool.h
+D:/algorithm-pattern-code/src/tools/SharedPointer.cpp
+../../include/tools/SharedPointer.h
+D:/algorithm-pattern-code/include/tools/SharedPointer.h
 iostream
--
-algorithm
--
-windows.h
 -
 

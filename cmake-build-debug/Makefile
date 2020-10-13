@@ -122,6 +122,33 @@ algorithm_pattern_code/fast:
 	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/build
 .PHONY : algorithm_pattern_code/fast
 
+include/tools/RWLockAtomic.obj: include/tools/RWLockAtomic.cpp.obj
+
+.PHONY : include/tools/RWLockAtomic.obj
+
+# target to build an object file
+include/tools/RWLockAtomic.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.obj
+.PHONY : include/tools/RWLockAtomic.cpp.obj
+
+include/tools/RWLockAtomic.i: include/tools/RWLockAtomic.cpp.i
+
+.PHONY : include/tools/RWLockAtomic.i
+
+# target to preprocess a source file
+include/tools/RWLockAtomic.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.i
+.PHONY : include/tools/RWLockAtomic.cpp.i
+
+include/tools/RWLockAtomic.s: include/tools/RWLockAtomic.cpp.s
+
+.PHONY : include/tools/RWLockAtomic.s
+
+# target to generate assembly for a file
+include/tools/RWLockAtomic.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/include/tools/RWLockAtomic.cpp.s
+.PHONY : include/tools/RWLockAtomic.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -662,6 +689,60 @@ src/tools/CircularQueue.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/CircularQueue.cpp.s
 .PHONY : src/tools/CircularQueue.cpp.s
 
+src/tools/SharedPointer.obj: src/tools/SharedPointer.cpp.obj
+
+.PHONY : src/tools/SharedPointer.obj
+
+# target to build an object file
+src/tools/SharedPointer.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.obj
+.PHONY : src/tools/SharedPointer.cpp.obj
+
+src/tools/SharedPointer.i: src/tools/SharedPointer.cpp.i
+
+.PHONY : src/tools/SharedPointer.i
+
+# target to preprocess a source file
+src/tools/SharedPointer.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.i
+.PHONY : src/tools/SharedPointer.cpp.i
+
+src/tools/SharedPointer.s: src/tools/SharedPointer.cpp.s
+
+.PHONY : src/tools/SharedPointer.s
+
+# target to generate assembly for a file
+src/tools/SharedPointer.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/SharedPointer.cpp.s
+.PHONY : src/tools/SharedPointer.cpp.s
+
+src/tools/TString.obj: src/tools/TString.cpp.obj
+
+.PHONY : src/tools/TString.obj
+
+# target to build an object file
+src/tools/TString.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.obj
+.PHONY : src/tools/TString.cpp.obj
+
+src/tools/TString.i: src/tools/TString.cpp.i
+
+.PHONY : src/tools/TString.i
+
+# target to preprocess a source file
+src/tools/TString.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.i
+.PHONY : src/tools/TString.cpp.i
+
+src/tools/TString.s: src/tools/TString.cpp.s
+
+.PHONY : src/tools/TString.s
+
+# target to generate assembly for a file
+src/tools/TString.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_pattern_code.dir\build.make CMakeFiles/algorithm_pattern_code.dir/src/tools/TString.cpp.s
+.PHONY : src/tools/TString.cpp.s
+
 src/tools/ThreadPool.obj: src/tools/ThreadPool.cpp.obj
 
 .PHONY : src/tools/ThreadPool.obj
@@ -752,6 +833,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... algorithm_pattern_code
 	@echo ... edit_cache
+	@echo ... include/tools/RWLockAtomic.obj
+	@echo ... include/tools/RWLockAtomic.i
+	@echo ... include/tools/RWLockAtomic.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -812,6 +896,12 @@ help:
 	@echo ... src/tools/CircularQueue.obj
 	@echo ... src/tools/CircularQueue.i
 	@echo ... src/tools/CircularQueue.s
+	@echo ... src/tools/SharedPointer.obj
+	@echo ... src/tools/SharedPointer.i
+	@echo ... src/tools/SharedPointer.s
+	@echo ... src/tools/TString.obj
+	@echo ... src/tools/TString.i
+	@echo ... src/tools/TString.s
 	@echo ... src/tools/ThreadPool.obj
 	@echo ... src/tools/ThreadPool.i
 	@echo ... src/tools/ThreadPool.s
